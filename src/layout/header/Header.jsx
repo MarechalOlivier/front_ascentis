@@ -1,8 +1,12 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import styleh from "../header/style.css";
 
 const Header =() => {
   return (
     <>
+    <header>
+      <h1>header</h1>
       <nav>
         <ul>
           <li>
@@ -16,13 +20,12 @@ const Header =() => {
           </li>
         </ul>
       </nav>
+    </header>
     </>    
   )};
     
     
-    return(
-        <h1>Header</h1>
-    )
+    
 
 
 export default Header;

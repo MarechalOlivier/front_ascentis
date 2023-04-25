@@ -1,12 +1,20 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Page_test from "./Page _test"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Header from "./layout/header/Header";
+import Footer from "./layout/footer/Footer";
+
+
 
 function App() {
   return (
-    <>
-      <Page_test />
-    </>
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
