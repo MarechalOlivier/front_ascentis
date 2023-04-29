@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "../header/style.css";
+import style from "../header/style.scss"
+
 
 const Header =() => {
   return (
     <>
       <header>
+        <h1>Hello</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
