@@ -2,40 +2,103 @@
   margin: 0;
 }
 
-nav {
+nav .first_navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  height: 90px;
+  height: 100px;
   background-color: #2b2b2b;
 }
-nav .account {
-  text-align: center;
+nav .first_navbar .logo {
+  width: 12%;
 }
-nav .account a {
+nav .first_navbar .logo img {
+  width: 100%;
+}
+nav .first_navbar .search input {
+  width: 600px;
+  border-radius: 5px;
+}
+nav .first_navbar .search button {
+  border-radius: 5px;
+}
+nav .first_navbar .account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 12%;
+}
+nav .first_navbar .account a {
   text-decoration: none;
   color: white;
   margin-left: 2%;
 }
-nav .logo img {
-  width: 45%;
+nav .first_navbar .account img {
+  width: 15%;
 }
-nav input {
-  width: 600px;
+
+nav .links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  background-color: #865aff;
 }
-nav .account img {
-  width: 5%;
+nav .links ul li {
+  list-style: none;
+  color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+nav .links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 * {
   margin: 0;
 }
 
-footer {
-  background-color: rgb(76, 192, 148);
+footer .first-footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  background-color: #2b2b2b;
+  margin: 0;
+  padding: 0;
 }
-footer h1 {
-  color: rgb(214, 56, 56);
+footer .first-footer ul li {
+  text-align: center;
+  list-style: none;
+}
+footer .first-footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .first-footer ul img {
+  width: 45%;
+}
+
+footer .social-links {
+  height: 150px;
+  background-color: #865aff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+footer .social-links img {
+  margin-top: 1%;
+  width: 2%;
+  margin-left: 2%;
+}
+footer .social-links p {
+  margin-top: 1%;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
