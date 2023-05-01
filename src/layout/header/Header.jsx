@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img/logo.png"
+import logo from "../img/logo_c.png"
 import logoCompte from "../img/logo_compte.png"
 import { Link } from "react-router-dom";
 import style from "../header/style.scss"
@@ -10,16 +10,30 @@ const Header =() => {
     <>
       <header>
         <nav>
-          <div className="logo">
-            <img src={logo} alt="Logo de l'entreprise"/>
+          <div className="first_navbar">
+            <div className="logo">
+              <img src={logo} alt="Logo de l'entreprise"/>
+            </div>
+            <div class="search">
+              <input type="text" placeholder="Recherche"/>
+              <button type="submit">Rechercher</button>
+            </div>
+            <div className="account">
+              <img src={logoCompte}  alt="logo compte"/>
+              <a href="#">Mon compte</a>
+            </div>
           </div>
-          <div class="search">
-            <input type="text" placeholder="Recherche"/>
-            <button type="submit">Rechercher</button>
-          </div>
-          <div className="account">
-            <img src={logoCompte}  alt="logo compte"/>
-            <a href="#">Mon compte</a>
+          <div className="links">
+            <ul>
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Dépannage</a></li>
+              <li><a href="#">Assistance</a></li>
+              <li>|</li>
+              <li><a href="#">Configurateur PC</a></li>
+              <li><a href="#">Ordinateur</a></li>
+              <li><a href="#">Périphériques</a></li>
+              <li><a href="#">Composant</a></li>
+            </ul>
           </div>
         </nav>
       </header>
@@ -31,17 +45,3 @@ export default Header;
 
 
 
-{/* <h1>header</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/header">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/footer">Contact</Link>
-          </li>
-        </ul>
-      </nav> */}
