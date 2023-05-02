@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importation des fichiers js bootstrap
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home.jsx";
 import Header from "./layout/header/Header";
 import Footer from "./layout/footer/Footer";
 

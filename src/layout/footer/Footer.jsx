@@ -1,4 +1,4 @@
-import style from "../footer/style.scss"
+import style from "../footer/style_footer.scss"
 import logo from  "../img/logo_c.png"
 import facebook from "../img/facebook_b.png"
 import linkedin from "../img/linked_b.png"
