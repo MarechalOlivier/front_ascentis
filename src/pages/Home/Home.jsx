@@ -5,8 +5,12 @@ import cyber from "../../assets/img/cyber_a.jpg"
 import support from "../../assets/img/support_b.jpg"
 import sale from "../../assets/img/vente_a.png"
 
-
-
+import logo_depanne from "../../assets/img/fixit.png"
+import logo_maintenance from "../../assets/img/maintenance.png"
+import logo_cyber from "../../assets/img/cyb.png"
+import logo_donnees from "../../assets/img/dd1.png"
+import logo_training from "../../assets/img/training.png"
+import logo_virus from "../../assets/img/virus.png"
 
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
@@ -71,7 +75,7 @@ return(
                       <h2>Support Informatique</h2>
                       <p>Problèmes informatiques ? Performances à améliorer ? Besoin de renforcer la sécurité votre infrastructure ? Nous avons les solutions pour répondre à vos besoins, que vous soyez une entreprise ou un particulier.</p>
                   </div>
-                  <a class="btn btn-support" href="#">Choisir cette classe</a>
+                  <a class="btn btn-support" href="#">En savoir plus</a>
               </div>
               <div class="presentation">
                   <div class="img-container">
@@ -81,17 +85,56 @@ return(
                       <h2>Vente Informatique</h2>
                       <p>Besoin de matériel ou de logiciels informatiques performants ? Nous avons les solutions adaptées à vos besoins et à votre budget.</p>
                   </div>    
-                  <a class="btn btn-sale" href="#">Choisir cette classe</a>
+                  <a class="btn btn-sale" href="#">En savoir plus</a>
               </div>
             </div>
-            
-            
+          </section>
+
+          <section id="prestation">
+            <div class="container">
+              <div class="row">
+                  <h2>NOS PRESTATIONS</h2>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <img src={logo_depanne} alt=""/>
+                  <h3>DÉPANNAGE</h3>
+                  <p>Besoin d’un dépannage informatique, d’une réparation d’ordinateur ? Pas besoin de vous déplacer, nous sommes là pour vous aider.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <img src= {logo_maintenance} alt=""/>
+                  <h3>MAINTENANCE</h3>
+                  <p>Indépendant, Profession libérale, TPE/PME. Vous recherchez un partenaire fiable et disponible ? Prenez contact avec nous.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <img src={logo_cyber} alt=""/>
+                  <h3>CYBERSÉCURITÉ</h3>
+                  <p>Protégez votre entreprise contre les menaces en ligne et assurez-vous que vos données sont en sécurité avec notre service d'audit de sécurité personnalisés.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <img src={logo_donnees} alt=""/>
+                  <h3>RÉCUPÉRATION DE DONNÉES</h3>
+                  <p>Nous pouvons récupérer vos données en cas de problème de disque dur, suppression accidentelle ou défaut matériel.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <img src={logo_training} alt=""/>
+                  <h3>FORMATION INFORMATIQUE</h3>
+                  <p>Nous vous proposons diverses formules de formation allant de la découverte au perfectionnement et à l’utilisation de votre matériel informatique.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <img src={logo_virus} alt=""/>
+                  <h3>DÉPANNAGE VIRUS INFORMATIQUE</h3>
+                  <p>Nous sommes à votre service pour diagnostiquer votre PC et supprimer les virus informatiques. Nous ferons le nécessaire pour sauver les données récupérables.</p>
+                </div>
+              </div>
+            </div>
+            <a className="btn" href="">PRENDRE RENDEZ-VOUS</a>
         </section>
 
-            </main>
-            <Footer />
-        </>
-    );
+            
+
+      </main>
+      <Footer />
+    </>
+  );
 };
 
 export default Home;

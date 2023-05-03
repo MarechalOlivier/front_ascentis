@@ -138,7 +138,6 @@ footer .social-links p {
 }
 #presentations .services .presentation .btn {
   padding: 10px 15px;
-  background-color: midnightblue;
   color: white;
   position: absolute;
   bottom: 1px;
@@ -173,6 +172,42 @@ footer .social-links p {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+
+#prestation {
+  text-align: center;
+}
+#prestation .btn {
+  text-align: center;
+  background-color: #865AFF;
+  color: white;
+  padding: 1% 1%;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#prestation .btn:hover {
+  background-color: white;
+  color: #865AFF;
+}
+#prestation .container {
+  text-align: center;
+  margin-bottom: 3%;
+}
+#prestation .container img {
+  width: 40%;
+}
+#prestation .container h2 {
+  margin: 8% 0% 8% 0%;
+}
+#prestation .container h3 {
+  font-size: 16px;
+  margin-bottom: 5%;
+}
+#prestation .container .row h1 {
+  font-size: 30px;
+}
+#prestation .container .row p {
+  margin-bottom: 10%;
 }
 
 /*# sourceMappingURL=index.css.map */
