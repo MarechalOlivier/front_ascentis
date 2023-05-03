@@ -23,40 +23,40 @@ return(
         <Header />
         <main>
           <section id="banner">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src={depannage} class="d-block w-100" alt="..."/>
+            <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img src={depannage} className="d-block w-100" alt="..."/>
                   
-                  <div class="carousel-caption d-none d-md-block">
+                  <div className="carousel-caption d-none d-md-block">
                     <h2>Dépannage informatique</h2>
                   </div>
 
                 </div>
-                <div class="carousel-item">
-                  <img src={maintenance} class="d-block w-100" alt="..."/>
+                <div className="carousel-item">
+                  <img src={maintenance} className="d-block w-100" alt="..."/>
 
-                  <div class="carousel-caption d-none d-md-block">
+                  <div className="carousel-caption d-none d-md-block">
                     <h2>Maintenance informatique</h2>
                   </div>
 
                 </div>
-                <div class="carousel-item">
-                  <img src={cyber} class="d-block w-100" alt="..."/>
+                <div className="carousel-item">
+                  <img src={cyber} className="d-block w-100" alt="..."/>
 
-                  <div class="carousel-caption d-none d-md-block">
+                  <div className="carousel-caption d-none d-md-block">
                     <h2>Cybersécurité</h2>
                   </div>
 
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
               </button>
             </div>
           </section>
@@ -67,67 +67,77 @@ return(
               <p>Des solutions informatiques adaptées à vos besoins</p>
             </div>
             <div className="services">
-              <div class="presentation">
-                  <div class="img-container">
+              <div className="presentation">
+                  <div className="img-container">
                       <img src={support} alt="Personne travaillant sur un ordinateur portable"/>
                   </div>
-                  <div class="content">
+                  <div className="content">
                       <h2>Support Informatique</h2>
                       <p>Problèmes informatiques ? Performances à améliorer ? Besoin de renforcer la sécurité votre infrastructure ? Nous avons les solutions pour répondre à vos besoins, que vous soyez une entreprise ou un particulier.</p>
                   </div>
-                  <a class="btn btn-support" href="#">En savoir plus</a>
+                  <a className="btn btn-support" href="#">En savoir plus</a>
               </div>
-              <div class="presentation">
-                  <div class="img-container">
+              <div className="presentation">
+                  <div className="img-container">
                       <img src={sale} alt="Ensemble de matériels informatique"/>
                   </div>
-                  <div class="content">
+                  <div className="content">
                       <h2>Vente Informatique</h2>
                       <p>Besoin de matériel ou de logiciels informatiques performants ? Nous avons les solutions adaptées à vos besoins et à votre budget.</p>
                   </div>    
-                  <a class="btn btn-sale" href="#">En savoir plus</a>
+                  <a className="btn btn-sale" href="#">En savoir plus</a>
               </div>
             </div>
           </section>
 
           <section id="prestation">
-            <div class="container">
-              <div class="row">
+            <div className="container">
+              <div className="row">
                   <h2>NOS PRESTATIONS</h2>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <img src={logo_depanne} alt=""/>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <img src={logo_depanne} alt="Logo outils de réparation"/>
                   <h3>DÉPANNAGE</h3>
-                  <p>Besoin d’un dépannage informatique, d’une réparation d’ordinateur ? Pas besoin de vous déplacer, nous sommes là pour vous aider.</p>
+                  <p>Besoin d'un dépannage informatique, d'une réparation d'ordinateur ? Pas besoin de vous déplacer, nous sommes là pour vous aider.</p>
+                  <a className="btn" href="#">En savoir plus</a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <img src= {logo_maintenance} alt=""/>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <img src= {logo_maintenance} alt="Logo de maintenance"/>
                   <h3>MAINTENANCE</h3>
                   <p>Indépendant, Profession libérale, TPE/PME. Vous recherchez un partenaire fiable et disponible ? Prenez contact avec nous.</p>
+                  <a className="btn" href="#">En savoir plus</a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <img src={logo_cyber} alt=""/>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <img src={logo_cyber} alt="Logo de cadenas réseau"/>
                   <h3>CYBERSÉCURITÉ</h3>
                   <p>Protégez votre entreprise contre les menaces en ligne et assurez-vous que vos données sont en sécurité avec notre service d'audit de sécurité personnalisés.</p>
+                  <a className="btn" href="#">En savoir plus</a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <img src={logo_donnees} alt=""/>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <img src={logo_donnees} alt="Logo de disque dur"/>
                   <h3>RÉCUPÉRATION DE DONNÉES</h3>
-                  <p>Nous pouvons récupérer vos données en cas de problème de disque dur, suppression accidentelle ou défaut matériel.</p>
+                  <p>Si vous avez accidentellement supprimé des données ou si votre disque dur rencontre un problème, nous disposons de différentes méthodes pour récupérer vos données.</p>
+                  <a className="btn" href="#">En savoir plus</a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <img src={logo_training} alt=""/>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <img src={logo_training} alt="Logo de formation"/>
                   <h3>FORMATION INFORMATIQUE</h3>
-                  <p>Nous vous proposons diverses formules de formation allant de la découverte au perfectionnement et à l’utilisation de votre matériel informatique.</p>
+                  <p>Nous vous proposons diverses formules de formation allant de la découverte au perfectionnement et à l'utilisation de votre matériel informatique.</p>
+                  <a className="btn" href="#">En savoir plus</a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <img src={logo_virus} alt=""/>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <img src={logo_virus} alt="Logo de virus informatique"/>
                   <h3>DÉPANNAGE VIRUS INFORMATIQUE</h3>
                   <p>Nous sommes à votre service pour diagnostiquer votre PC et supprimer les virus informatiques. Nous ferons le nécessaire pour sauver les données récupérables.</p>
+                  <a className="btn" href="#">En savoir plus</a>
                 </div>
               </div>
             </div>
-            <a className="btn" href="">PRENDRE RENDEZ-VOUS</a>
-        </section>
+          </section>
+
+          <section id="question_banner">
+            <h2>Vous avez besoin d'un dépannage, vous avez un projet d'achat ou tout simplement des questions </h2>
+            <p>Ascentis votre partenaire informatique, disponible de 8h00 à 19h00</p>
+          </section>
 
             
 

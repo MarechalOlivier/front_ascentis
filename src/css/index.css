@@ -143,31 +143,21 @@ footer .social-links p {
   bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
-}
-#presentations .services .presentation .btn-support {
   background-color: #865AFF;
   border: 1px solid #865AFF;
 }
-#presentations .services .presentation .btn-support:hover {
+#presentations .services .btn:hover {
   background-color: white;
   color: #865AFF;
 }
-#presentations .services .presentation .btn-sale {
-  background-color: #865AFF;
-  border: 1px solid #865AFF;
-}
-#presentations .services .presentation .btn-sale:hover {
-  background-color: white;
-  color: #865AFF;
-}
-#presentations .services .presentation .content {
+#presentations .services .content {
   padding: 1rem;
 }
-#presentations .services .presentation .img-container {
+#presentations .services .img-container {
   width: 100%;
   height: 25vh;
 }
-#presentations .services .presentation .img-container img {
+#presentations .services .img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -179,11 +169,13 @@ footer .social-links p {
 }
 #prestation .btn {
   text-align: center;
-  background-color: #865AFF;
-  color: white;
+  background-color: white;
+  color: #865AFF;
+  border: 1px solid #865AFF;
   padding: 1% 1%;
   border-radius: 5px;
   text-decoration: none;
+  margin-bottom: 15%;
 }
 #prestation .btn:hover {
   background-color: white;
@@ -191,7 +183,7 @@ footer .social-links p {
 }
 #prestation .container {
   text-align: center;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 #prestation .container img {
   width: 40%;
@@ -203,11 +195,18 @@ footer .social-links p {
   font-size: 16px;
   margin-bottom: 5%;
 }
-#prestation .container .row h1 {
-  font-size: 30px;
-}
 #prestation .container .row p {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+}
+
+#question_banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  background-color: #865AFF;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

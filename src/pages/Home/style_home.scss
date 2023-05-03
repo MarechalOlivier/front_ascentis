@@ -49,25 +49,16 @@
                             bottom: 1px;   
                             left: 50%;
                             transform: translateX(-50%);
-                        }
-                        .btn-support {
                             background-color: #865AFF;
                             border: 1px solid #865AFF;
                         }
-                        .btn-support:hover {
+                                                
+                        }
+                        .btn:hover {
                             background-color: white;
                             color: #865AFF;
                         }
-                        .btn-sale {
-                            background-color: #865AFF;
-                            border: 1px solid #865AFF;
-                        }
-                        
-                        .btn-sale:hover {
-                            background-color: white;
-                            color: #865AFF;
-                        }
-                        
+                       
                         .content {
                             padding: 1rem;
                         }
@@ -88,7 +79,7 @@
                 }
             }
 
-}
+
 
 #prestation {
     
@@ -97,11 +88,13 @@
         .btn{
             
             text-align: center;
-            background-color: #865AFF;;
-            color: white;
+            background-color: white;
+            color: #865AFF;
+            border: 1px solid #865AFF;
             padding: 1% 1%;
             border-radius: 5px;
             text-decoration: none;
+            margin-bottom: 15%;
            
         }
 
@@ -110,16 +103,15 @@
         color: #865AFF;
         }
 
+
         .container {
             text-align: center;
-            margin-bottom: 3%;
+            margin-bottom: 4%;
             
                 img {
                     width: 40%;
                 }
-            
-            
-
+                    
             h2 {
                 margin: 8% 0% 8% 0%;
             }
@@ -130,22 +122,27 @@
             }
             .row {
                 
-                h1 {
-                    font-size: 30px;
-                }
-                h2 {
-                    
-                }
-                
-                p{
-                    margin-bottom: 10%;
-                    
+                p {
+                    margin-bottom: 5%;
+
                 }
                 
                 
             }
 
         }
+}
+
+#question_banner {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-color: #865AFF;
+    color: white;
+    
 }
 
     
