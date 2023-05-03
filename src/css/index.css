@@ -101,4 +101,78 @@ footer .social-links p {
   color: white;
 }
 
+* {
+  margin: 0;
+}
+
+.carousel-item h2 {
+  padding-left: 90%;
+  padding-bottom: 30%;
+}
+
+#carouselExampleAutoplaying .carousel-inner .carousel-item {
+  height: 60vh;
+}
+
+#presentations {
+  text-align: center;
+}
+#presentations .title {
+  margin: 4% 4%;
+}
+#presentations .services {
+  display: flex;
+  justify-content: center;
+}
+#presentations .services h2 {
+  margin: 5% 5%;
+}
+#presentations .services p {
+  margin-top: 7%;
+}
+#presentations .services .presentation {
+  width: 25%;
+  margin: 2rem 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+#presentations .services .presentation .btn {
+  padding: 10px 15px;
+  background-color: midnightblue;
+  color: white;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#presentations .services .presentation .btn-support {
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+}
+#presentations .services .presentation .btn-support:hover {
+  background-color: white;
+  color: #865AFF;
+}
+#presentations .services .presentation .btn-sale {
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+}
+#presentations .services .presentation .btn-sale:hover {
+  background-color: white;
+  color: #865AFF;
+}
+#presentations .services .presentation .content {
+  padding: 1rem;
+}
+#presentations .services .presentation .img-container {
+  width: 100%;
+  height: 25vh;
+}
+#presentations .services .presentation .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=index.css.map */

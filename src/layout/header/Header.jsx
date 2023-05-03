@@ -25,9 +25,9 @@ const Header =() => {
           </div>
           <div className="links">
             <ul>
-              <li><a href="#">Maintenance</a></li>
               <li><a href="#">Dépannage</a></li>
-              <li><a href="#">Assistance</a></li>
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Cybersécurité</a></li>
               <li>|</li>
               <li><a href="#">Configurateur PC</a></li>
               <li><a href="#">Ordinateur</a></li>
