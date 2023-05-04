@@ -12,6 +12,12 @@ import logo_donnees from "../../assets/img/dd1.png"
 import logo_training from "../../assets/img/training.png"
 import logo_virus from "../../assets/img/virus.png"
 
+import logo_validation from "../../assets/img/validation.png"
+
+import client_a from "../../assets/img/nancy-martin.png"
+import client_b from "../../assets/img/nicolas-basso.png"
+import client_c from "../../assets/img/remi-dubois.png"
+
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 import style from "../Home/style_home.scss"
@@ -139,6 +145,41 @@ return(
             <p>Ascentis votre partenaire informatique, disponible de 8h00 à 19h00</p>
           </section>
 
+          <section id="testimonials">
+            <div className="container">
+              <div className="row">
+                <img src={logo_validation} alt="Logo de validation"/>
+                <h2>ILS NOUS FONT CONFIANCE</h2>
+                <div className="testimonial-container col-12 col-md-6 col-lg-4">
+                  
+                    <img src={client_a} alt="Logo outils de réparation"/>
+                 
+                  <div className="content">
+                    <p>Dépannage très Pro, efficace, sérieux, ponctuel, avec un temps de résolution très rapide après alerte.</p>
+                    <p className="name-bold">Nancy Martin</p>
+                  </div>
+                </div>
+                <div className="testimonial-container col-12 col-md-6 col-lg-4">
+                  
+                    <img src={client_b} alt="Logo outils de réparation"/>
+                  
+                  <div className="content">
+                    <p>Intervention à distance rapide et efficace, un samedi matin, un quart d'heure seulement après mon appel. </p>
+                    <p className="name-bold">Nicolas Basso</p>
+                  </div>
+                </div>
+                <div className=" testimonial-container col-12 col-md-6 col-lg-4">
+                 
+                    <img src={client_c} alt="Logo outils de réparation"/>
+                  
+                  <div className="content">
+                    <p>Partenaire compétant et à l'écoute de ses clients. Toujours prompt à trouver une réponse.</p>
+                    <p className="name-bold">Pedro Dos santos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
             
 
       </main>

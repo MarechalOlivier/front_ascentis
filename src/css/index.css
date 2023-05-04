@@ -204,9 +204,34 @@ footer .social-links p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 15vh;
+  height: 20vh;
   background-color: #865AFF;
   color: white;
+}
+
+#testimonials {
+  margin-top: 2%;
+}
+#testimonials .container {
+  text-align: center;
+  margin-bottom: 5%;
+}
+#testimonials .container .row img {
+  margin: auto;
+  width: 8%;
+}
+#testimonials .container .testimonial-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  padding: 5%;
+}
+#testimonials .container .testimonial-container .content .name-bold {
+  font-weight: bold;
+}
+#testimonials .container .testimonial-container img {
+  width: 30%;
+  padding-bottom: 5%;
 }
 
 /*# sourceMappingURL=index.css.map */
