@@ -2,15 +2,14 @@ import React from "react";
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 
-
-const Login =() => {
+const Support_ticket =() => {
     return(
         <>
             <Header />
-            <h1>Login</h1>
+            <h1>Support_ticket</h1>
             <Footer />
         </>
     )
 }
 
-export default Login;
+export default Support_ticket;

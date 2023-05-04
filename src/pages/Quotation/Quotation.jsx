@@ -2,15 +2,14 @@ import React from "react";
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 
-
-const Login =() => {
+const Quotation =() => {
     return(
         <>
             <Header />
-            <h1>Login</h1>
+            <h1>Quotation</h1>
             <Footer />
         </>
     )
 }
 
-export default Login;
+export default Quotation;

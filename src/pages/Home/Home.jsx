@@ -4,20 +4,16 @@ import maintenance from "../../assets/img/maintenance_a.jpg"
 import cyber from "../../assets/img/cyber_a.jpg"
 import support from "../../assets/img/support_b.jpg"
 import sale from "../../assets/img/vente_a.png"
-
 import logo_depanne from "../../assets/img/fixit.png"
 import logo_maintenance from "../../assets/img/maintenance.png"
 import logo_cyber from "../../assets/img/cyb.png"
 import logo_donnees from "../../assets/img/dd1.png"
 import logo_training from "../../assets/img/training.png"
 import logo_virus from "../../assets/img/virus.png"
-
 import logo_validation from "../../assets/img/validation.png"
-
 import client_a from "../../assets/img/nancy-martin.png"
 import client_b from "../../assets/img/nicolas-basso.png"
 import client_c from "../../assets/img/remi-dubois.png"
-
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 import style from "../Home/style_home.scss"

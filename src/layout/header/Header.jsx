@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../img/logo_c.png"
 import logoCompte from "../img/logo_compte.png"
-import { Link } from "react-router-dom";
+
 import style from "../header/style_header.scss"
 
 
@@ -12,7 +13,7 @@ const Header =() => {
         <nav>
           <div className="first_navbar">
             <div className="logo">
-              <img src={logo} alt="Logo de l'entreprise"/>
+              <Link to="/"><img src={logo} alt="Logo de l'entreprise"/></Link>
             </div>
             <div class="search">
               <input type="text" placeholder="Recherche"/>

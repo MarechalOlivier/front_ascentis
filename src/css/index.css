@@ -85,7 +85,7 @@ footer .first-footer ul img {
 }
 
 footer .social-links {
-  height: 150px;
+  height: 180px;
   background-color: #865aff;
   margin: 0;
   padding: 0;
@@ -230,8 +230,40 @@ footer .social-links p {
   font-weight: bold;
 }
 #testimonials .container .testimonial-container img {
-  width: 30%;
+  width: 35%;
   padding-bottom: 5%;
+}
+
+* {
+  margin: 0;
+}
+
+h2 {
+  padding: 5%;
+}
+
+#forms .form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  width: 30%;
+  border: 5px solid #865AFF;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+#forms .form .btn {
+  padding: 8px 25px;
+  color: white;
+  margin: 10%;
+  left: 50%;
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+}
+#forms .btn:hover {
+  background-color: white;
+  color: #865AFF;
 }
 
 /*# sourceMappingURL=index.css.map */

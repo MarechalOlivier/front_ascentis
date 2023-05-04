@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    
+}
+#formulaire {
+    border: 1px solid #865AFF;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 3%;
+    border-radius: 5px;
+    width: 40%;
+     
+    form {
+        margin: auto;
+        
+    }
+    .row{
+        width: 90%;
+        
+    }
+    
+    
+
+
+    .btn {
+                
+        padding: 8px 25px;
+        color: white;
+        left: 50%;
+        background-color: #865AFF;
+        border: 1px solid #865AFF;
+        margin: auto;
+        
+        
+        
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: #865AFF;
+    }
+}
+

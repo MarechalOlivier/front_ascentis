@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import style from "../footer/style_footer.scss"
 import logo from  "../img/logo_c.png"
 import facebook from "../img/facebook_b.png"
@@ -12,8 +14,8 @@ const Footer =() =>{
                 <ul>
                     <li><a href="#">Qui sommes-nous</a></li>
                     <li><a href="#">Nos engagements</a></li>
-                    <li><img src={logo}/></li>
-                    <li><a href="#">Contacter-nous</a></li>
+                    <li><Link to="/"><img src={logo} alt="Logo de l'entreprise"/></Link></li>
+                    <li><Link to="/contact">Contactez-nous</Link></li>
                     <li><a href="#">Où nous trouver</a></li>
                 </ul>
             </div>
@@ -33,8 +35,6 @@ const Footer =() =>{
                 <p>© Copyright 2023 | Mentions légales | Conditions Générales de vente</p>
             </div>
 
-
- 
         </footer>
     )
     
