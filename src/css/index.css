@@ -239,29 +239,58 @@ footer .social-links p {
 }
 
 h2 {
-  padding: 5%;
-}
-
-#forms .form {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  align-items: center;
-  width: 30%;
-  border: 5px solid #865AFF;
-  border-radius: 5px;
-  margin-top: 2%;
+  text-align: center;
   margin-bottom: 5%;
 }
-#forms .form .btn {
-  padding: 8px 25px;
+
+p {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 0.8rem;
+}
+
+#root {
+  background-color: #F5F5F5;
+}
+
+#formulaire {
+  border: 2px solid #865AFF;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 2%;
+  border-radius: 10px;
+  width: 40%;
+  background-color: white;
+}
+#formulaire ::placeholder {
+  color: #999999;
+}
+#formulaire form {
+  margin: auto;
+  width: 90%;
+}
+#formulaire form :nth-child(13) > p:nth-child(2) {
+  margin-top: 5%;
+  font-size: 0.8rem;
+  color: #865AFF;
+}
+#formulaire form :nth-child(4) {
+  margin-top: 8%;
+}
+#formulaire .text-center {
+  text-align: center;
+  padding: 2%;
+}
+#formulaire .btn {
+  padding: 10px 50px;
   color: white;
-  margin: 10%;
   left: 50%;
   background-color: #865AFF;
   border: 1px solid #865AFF;
+  margin-top: 5%;
 }
-#forms .btn:hover {
+#formulaire .btn:hover {
   background-color: white;
   color: #865AFF;
 }
