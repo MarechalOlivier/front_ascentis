@@ -67,7 +67,7 @@ const Creat_account = () => {
                         </div>
                     </form>
                 </section>               
-                <p>Les informations recueillies par Ascentis font l'objet d'un traitement destiné à la gestion de la relation client-prospect et aux opérations associées.</p>                
+                                
             </main>
             <Footer />
         </>
