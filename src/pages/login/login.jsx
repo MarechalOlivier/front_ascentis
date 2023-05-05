@@ -33,8 +33,9 @@ const Login =() => {
                         </div>
                     </form>
                 </section>
-            <Footer />  
             </main>
+            <Footer />  
+            
         </>
     )
 }

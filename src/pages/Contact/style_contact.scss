@@ -1,0 +1,121 @@
+
+#formulaire-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4% 0% 4% 0%;
+    
+    h1 {
+        text-align: center;
+        margin-top: 2%;
+    }
+        .contact {
+            
+            border: 2px solid #865AFF;
+            border-radius: 10px;
+            width: 50%;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3%;
+            
+            
+            
+            
+
+                input {
+                    width: 60%;
+                }
+        
+                    .btn-contact{
+                        text-align: center;
+                        margin-bottom: 5%;
+
+                    }
+                    .btn {
+            
+                    padding: 10px 50px;
+                    color: white;
+                    
+                    background-color: #865AFF;
+                    border: 1px solid #865AFF;
+                    
+                                                            
+                }
+              
+            
+                .btn:hover {
+                    background-color: white;
+                    color: #865AFF;
+                          a{
+                            color: #865AFF;
+                          }           
+                }
+        
+                .btn a{
+                    text-decoration: none;
+                            
+                }
+        
+                a:visited {
+                    color:white
+                }
+                               
+        }
+}
+       
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // border: 2px solid #865AFF;
+    // margin: auto;
+    // margin-top: 4%;
+    // margin-bottom: 4%;
+    // padding: 2%;
+    // border-radius: 10px;
+    // width: 60%;
+    // background-color: white;
+        
+    
+       
+        
+            
+        
+            
+
+
+
+       // Configuration pour le bouton de connexion "link"
+        
+
+
+        
+        
+        
+     

@@ -12,33 +12,33 @@ const Creat_account = () => {
                     <form class="row g-3">
                         <h2>Identifiants</h2>
                         <div class="col-md-6">
-                            <label for="inputEmail" class="form-label">Email *</label>
+                            <label htmlFor="inputEmail" class="form-label">Email *</label>
                             <input type="email" class="form-control" id="inputEmail" placeholder="Votre adresse email" required />
                         </div>
                         <div class="col-md-6">
-                            <label for="inputPassword" class="form-label">Password *</label>
+                            <label htmlFor="inputPassword" class="form-label">Password *</label>
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Votre mot de passe" required />
                         </div>
                         
                         <h2>Informations personnelles</h2>
                         <div class="col-md-6">
-                            <label for="inputName" class="form-label">Prénom *</label>
+                            <label htmlFor="inputName" class="form-label">Prénom *</label>
                             <input type="text" class="form-control" id="inputName" placeholder="Votre Prénom" required />
                         </div>
                         <div class="col-md-6">
-                            <label for="inputLastName" class="form-label">Nom *</label>
+                            <label htmlFor="inputLastName" class="form-label">Nom *</label>
                             <input type="text" class="form-control" id="inputLastName" placeholder="Votre Nom" required />
                         </div>
                         <div class="col-12">
-                            <label for="inputAdresse1" class="form-label">Adresse *</label>
+                            <label htmlFor="inputAdresse1" class="form-label">Adresse *</label>
                             <input type="text" class="form-control" id="inputAddress1" placeholder="Adresse" required />
                         </div>
                         <div class="col-12">
-                            <label for="inputAdresse2" class="form-label">Complément d'adresse</label>
+                            <label htmlFor="inputAdresse2" class="form-label">Complément d'adresse</label>
                             <input type="text" class="form-control" id="inputAddress2" placeholder="Entrée, bat, résidence" required />
                         </div>
                         <div class="col-md-6">
-                            <label for="inputCity" class="form-label">Ville *</label>
+                            <label htmlFor="inputCity" class="form-label">Ville *</label>
                             <input type="text" class="form-control" id="inputCity" required />
                         </div>
                         <div class="col-md-4">
