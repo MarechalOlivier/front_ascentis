@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-}
-
 nav .first_navbar {
   display: flex;
   justify-content: space-around;
@@ -59,10 +55,6 @@ nav .links ul li a {
   text-decoration: none;
 }
 
-* {
-  margin: 0;
-}
-
 footer .first-footer ul {
   display: flex;
   justify-content: space-evenly;
@@ -106,7 +98,7 @@ footer .social-links p {
 }
 
 .carousel-item h2 {
-  padding-left: 90%;
+  padding-left: 95%;
   padding-bottom: 30%;
 }
 
@@ -234,23 +226,54 @@ footer .social-links p {
   padding-bottom: 5%;
 }
 
-* {
-  margin: 0;
+#formulaire-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4% 0% 4% 0%;
 }
-
-h2 {
+#formulaire-contact h1 {
+  text-align: center;
+  margin-top: 2%;
+}
+#formulaire-contact .contact {
+  border: 2px solid #865AFF;
+  border-radius: 10px;
+  width: 50%;
+}
+#formulaire-contact .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+#formulaire-contact .form input {
+  width: 60%;
+}
+#formulaire-contact .form .btn-contact {
   text-align: center;
   margin-bottom: 5%;
 }
-
-p {
-  text-align: center;
-  margin-bottom: 2%;
-  font-size: 0.8rem;
+#formulaire-contact .form .btn {
+  padding: 10px 50px;
+  color: white;
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
 }
-
-#root {
-  background-color: #F5F5F5;
+#formulaire-contact .form .btn:hover {
+  background-color: white;
+  color: #865AFF;
+}
+#formulaire-contact .form .btn:hover a {
+  color: #865AFF;
+}
+#formulaire-contact .form .btn a {
+  text-decoration: none;
+}
+#formulaire-contact .form a:visited {
+  color: white;
 }
 
 #formulaire {
@@ -270,19 +293,22 @@ p {
   margin: auto;
   width: 90%;
 }
-#formulaire form :nth-child(13) > p:nth-child(2) {
-  margin-top: 5%;
+#formulaire form :nth-child(14) {
   font-size: 0.8rem;
   color: #865AFF;
 }
 #formulaire form :nth-child(4) {
   margin-top: 8%;
 }
-#formulaire .text-center {
+#formulaire form h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+#formulaire form .text-center {
   text-align: center;
   padding: 2%;
 }
-#formulaire .btn {
+#formulaire form .btn {
   padding: 10px 50px;
   color: white;
   left: 50%;
@@ -290,9 +316,73 @@ p {
   border: 1px solid #865AFF;
   margin-top: 5%;
 }
-#formulaire .btn:hover {
+#formulaire form .btn:hover {
   background-color: white;
   color: #865AFF;
+}
+
+#formulaire-connexion {
+  border: 2px solid #865AFF;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 2%;
+  border-radius: 10px;
+  width: 40%;
+  background-color: white;
+}
+#formulaire-connexion ::placeholder {
+  color: #999999;
+}
+#formulaire-connexion .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#formulaire-connexion .btn-center {
+  text-align: center;
+}
+#formulaire-connexion .btn-center .btnc {
+  margin: 0;
+}
+#formulaire-connexion p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #865AFF;
+}
+#formulaire-connexion h2 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+#formulaire-connexion h2:nth-child(6) {
+  text-align: center;
+  margin-top: 5%;
+  border-top: 1px solid #865AFF;
+  padding-top: 5%;
+}
+#formulaire-connexion .btn {
+  padding: 10px 50px;
+  color: white;
+  left: 50%;
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+  margin-top: 5%;
+}
+#formulaire-connexion .btn:last-child {
+  margin: 0;
+}
+#formulaire-connexion .btn:hover {
+  background-color: white;
+  color: #865AFF;
+}
+#formulaire-connexion .btn:hover a {
+  color: #865AFF;
+}
+#formulaire-connexion .btn a {
+  text-decoration: none;
+}
+#formulaire-connexion a:visited {
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
