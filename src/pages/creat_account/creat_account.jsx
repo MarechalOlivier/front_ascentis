@@ -60,11 +60,14 @@ const Creat_account = () => {
                         </div>
                         <div class="col-12 text-center">
                             <p>* Champs obligatoires</p>
+                        </div>
+                        <div class="col-12 text-center">
                             <p>Nous nous engageons à garder ces informations strictement confidentielles.</p>
+                            <p>Les informations recueillies par Ascentis font l'objet d'un traitement destiné à la gestion de la relation client-prospect et aux opérations associées.</p>
                         </div>
                     </form>
-                </section>
-                <p>Les informations recueillies par Ascentis font l'objet d'un traitement destiné à la gestion de la relation client-prospect et aux opérations associées.</p>
+                </section>               
+                <p>Les informations recueillies par Ascentis font l'objet d'un traitement destiné à la gestion de la relation client-prospect et aux opérations associées.</p>                
             </main>
             <Footer />
         </>

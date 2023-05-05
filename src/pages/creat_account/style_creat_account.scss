@@ -1,26 +1,5 @@
-*{
-    margin: 0;
-}
-
-h2{
-    text-align: center;
-    margin-bottom: 5%;
-       
-}
-
-p {
-    text-align: center;
-    margin-bottom: 2%;
-    font-size: 0.8rem;
-    
-}
 
 
-#root {
-    background-color: #F5F5F5;
-    
-   
-}
 
 #formulaire {
     border: 2px solid #865AFF;
@@ -31,43 +10,53 @@ p {
     border-radius: 10px;
     width: 40%;
     background-color: white;
-        ::placeholder{
-            color: #999999;
-        }
-
-                  
-    form {
-        margin: auto;
-        width: 90%;
-
-        :nth-child(13) > p:nth-child(2) {
-            margin-top: 5%;
-            font-size: 0.8rem;
-            color: #865AFF;
-        }
-        :nth-child(4){
-            margin-top: 8%;
-        }
+    ::placeholder{
+        color: #999999;
     }
-           
-    .text-center {
-        text-align: center;
-        padding: 2%;
-    }
-    .btn {
+                 
+        form {
+            margin: auto;
+            width: 90%;
+
+            
+            :nth-child(14) {               
+                font-size: 0.8rem;
+                color: #865AFF;
+            }
+            :nth-child(4){
+                margin-top: 8%;
+            }
+            h2{
+                text-align: center;
+                margin-bottom: 5%;
                 
-        padding: 10px 50px;
-        color: white;
-        left: 50%;
-        background-color: #865AFF;
-        border: 1px solid #865AFF;
-        margin-top:5%;
-                        
-    }
+            }
+            
+            .text-center {
+                text-align: center;
+                padding: 2%;
+                    
+            }
 
-    .btn:hover {
-        background-color: white;
-        color: #865AFF;
-    }
+            
+            .btn {
+                        
+                padding: 10px 50px;
+                color: white;
+                left: 50%;
+                background-color: #865AFF;
+                border: 1px solid #865AFF;
+                margin-top:5%;
+                                
+            }
+
+            .btn:hover {
+                background-color: white;
+                color: #865AFF;
+            }
+        
+        }
 }
+           
+            
 

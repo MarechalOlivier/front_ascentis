@@ -20,8 +20,8 @@ const Header =() => {
               <button type="submit">Rechercher</button>
             </div>
             <div className="account">
-              <img src={logoCompte}  alt="logo compte"/>
-              <a href="#">Mon compte</a>
+                <img src={logoCompte} alt="Logo de compte"/>
+                <Link to="/login">Mon Compte</Link>
             </div>
           </div>
           <div className="links">

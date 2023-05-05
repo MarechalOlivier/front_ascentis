@@ -13,9 +13,6 @@ import Support_ticket from "./pages/Support_ticket/Support_ticket.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 
 
-
-
-
 function App() {
   return (
     <BrowserRouter>

@@ -1,0 +1,87 @@
+
+#formulaire-connexion {
+    
+    border: 2px solid #865AFF;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 2%;
+    border-radius: 10px;
+    width: 40%;
+    background-color: white;
+        ::placeholder{
+            color: #999999;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn-center {
+            text-align: center;
+            .btnc{
+                margin:0;
+            }
+            
+        }
+
+        p{
+            text-align: center;
+            font-size: 0.8rem;
+            color: #865AFF;
+        }
+
+
+        h2 {
+            text-align: center;
+            margin-bottom: 3%;
+        
+        }
+        h2:nth-child(5){
+            text-align: center;
+            margin-top: 10%;
+            border-top: 1px solid #865AFF;
+            padding-top: 5%;
+        
+                
+        }
+
+        
+        
+       // Configuration pour le bouton de connexion "link"
+        .btn {
+            
+            padding: 10px 50px;
+            color: white;
+            left: 50%;
+            background-color: #865AFF;
+            border: 1px solid #865AFF;
+            margin-top:5%;
+                     
+
+                    
+        }
+    
+        .btn:hover {
+            background-color: white;
+            color: #865AFF;
+                  a{
+                    color: #865AFF;
+                  }           
+        }
+
+        .btn a{
+            text-decoration: none;
+                    
+        }
+
+        a:visited {
+            color:white
+        }
+
+
+        
+        
+        
+}        
