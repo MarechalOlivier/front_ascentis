@@ -368,4 +368,64 @@ footer .social-links p {
   color: white;
 }
 
+#computers h1 {
+  text-align: center;
+  padding: 2% 0% 2% 0%;
+}
+#computers h2 {
+  margin-bottom: 5%;
+}
+#computers .computer {
+  display: flex;
+  margin-bottom: 5%;
+}
+#computers .computer .dropdown {
+  margin-top: 8%;
+}
+#computers .computer .dropdown .dropdown-menu {
+  background-color: white;
+  width: 100%;
+}
+#computers .computer .dropdown .btn {
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+  width: 100%;
+}
+#computers .computer .computer-search {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #865AFF;
+  border-radius: 5px;
+  margin: 0% 1% 0% 3%;
+  height: 60vh;
+  padding: 1%;
+  text-align: center;
+}
+#computers .computer .computer-search form {
+  border-bottom: 1px solid #865AFF;
+  padding-bottom: 8%;
+}
+#computers .computer .computer-search form .btn-search {
+  margin-left: 6%;
+  border: 1px solid #865AFF;
+  border-radius: 5px;
+  color: white;
+  background-color: #865AFF;
+  padding: 6px 20px;
+}
+#computers .computer .computer-search form .text-search {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 2%;
+}
+#computers .computer .computer-list {
+  width: 80%;
+  border: 2px solid #865AFF;
+  border-radius: 5px;
+  margin: 0% 3% 0% 1%;
+  padding: 1%;
+}
+
 /*# sourceMappingURL=index.css.map */

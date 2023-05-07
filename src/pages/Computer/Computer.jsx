@@ -18,7 +18,7 @@ const Computer =() => {
                             <h2>Recherche</h2>
                             <form>
                                 <input type="text" className="text-search" placeholder="Recherche" />
-                                <button className="btn-search" type="submit">Rechercher</button>
+                                <button className="btn-search" type="submit">Ok</button>
                             </form>
 
                             <div class="dropdown">
