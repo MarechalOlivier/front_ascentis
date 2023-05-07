@@ -11,6 +11,7 @@ import Profil from "./pages/Profil/Profil.jsx";
 import Quotation from "./pages/Quotation/Quotation.jsx";
 import Support_ticket from "./pages/Support_ticket/Support_ticket.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import Computer from "./pages/Computer/Computer.jsx";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
         {/* User */}
         <Route path="/" element={<Home />} />
+        <Route path="/computer" element={<Computer />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
 

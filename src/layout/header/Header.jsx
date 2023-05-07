@@ -21,7 +21,7 @@ const Header =() => {
             </div>
             <div className="account">
                 <img src={logoCompte} alt="Logo de compte"/>
-                <Link to="/login">Mon Compte</Link>
+                <Link to="/">Mon Compte</Link>
             </div>
           </div>
           <div className="links">
@@ -31,7 +31,7 @@ const Header =() => {
               <li><a href="#">Cybersécurité</a></li>
               <li>|</li>
               <li><a href="#">Configurateur PC</a></li>
-              <li><a href="#">Ordinateur</a></li>
+              <li><Link to="/Computer">Ordinateur</Link></li>
               <li><a href="#">Périphériques</a></li>
               <li><a href="#">Composant</a></li>
             </ul>
