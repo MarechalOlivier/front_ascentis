@@ -231,157 +231,140 @@ footer .social-links p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 4% 0% 4% 0%;
 }
 #formulaire-contact h1 {
   text-align: center;
-  margin-top: 2%;
+  padding: 2% 0% 2% 0%;
 }
 #formulaire-contact .contact {
   border: 2px solid #865AFF;
   border-radius: 10px;
   width: 50%;
+  margin-bottom: 5%;
 }
-#formulaire-contact .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3%;
+#formulaire-contact .contact h2 {
+  text-align: center;
+  padding: 4% 0% 4% 0%;
+  font-size: 2rem;
 }
-#formulaire-contact .form input {
-  width: 60%;
+#formulaire-contact .contact .form {
+  margin: 0% 5% 0% 5%;
 }
-#formulaire-contact .form .btn-contact {
+#formulaire-contact .contact .btn-contact {
   text-align: center;
   margin-bottom: 5%;
 }
-#formulaire-contact .form .btn {
+#formulaire-contact .contact .btn {
   padding: 10px 50px;
   color: white;
   background-color: #865AFF;
   border: 1px solid #865AFF;
 }
-#formulaire-contact .form .btn:hover {
+#formulaire-contact .contact .btn:hover {
   background-color: white;
   color: #865AFF;
 }
-#formulaire-contact .form .btn:hover a {
+#formulaire-contact .contact .btn:hover a {
   color: #865AFF;
 }
-#formulaire-contact .form .btn a {
+#formulaire-contact .contact .btn a {
   text-decoration: none;
 }
-#formulaire-contact .form a:visited {
+#formulaire-contact .contact a:visited {
   color: white;
 }
 
 #formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#formulaire h1 {
+  text-align: center;
+  padding: 2% 0% 2% 0%;
+}
+#formulaire .account {
   border: 2px solid #865AFF;
-  margin: auto;
-  margin-top: 4%;
-  margin-bottom: 4%;
-  padding: 2%;
   border-radius: 10px;
-  width: 40%;
-  background-color: white;
+  width: 50%;
+  padding: 0% 4% 0% 4%;
+  margin-bottom: 5%;
 }
-#formulaire ::placeholder {
-  color: #999999;
+#formulaire .account h2 {
+  text-align: center;
+  margin: 5% 0% 5% 0%;
+  font-size: 2rem;
 }
-#formulaire form {
-  margin: auto;
-  width: 90%;
-}
-#formulaire form :nth-child(14) {
+#formulaire .account :nth-child(13) p {
   font-size: 0.8rem;
   color: #865AFF;
 }
-#formulaire form :nth-child(4) {
-  margin-top: 8%;
-}
-#formulaire form h2 {
-  text-align: center;
-  margin-bottom: 5%;
-}
-#formulaire form .text-center {
-  text-align: center;
-  padding: 2%;
-}
-#formulaire form .btn {
+#formulaire .account form .btn {
   padding: 10px 50px;
   color: white;
   left: 50%;
   background-color: #865AFF;
   border: 1px solid #865AFF;
-  margin-top: 5%;
+  margin-top: 2%;
 }
-#formulaire form .btn:hover {
+#formulaire .account form .btn:hover {
   background-color: white;
   color: #865AFF;
 }
 
 #formulaire-connexion {
-  border: 2px solid #865AFF;
-  margin: auto;
-  margin-top: 4%;
-  margin-bottom: 4%;
-  padding: 2%;
-  border-radius: 10px;
-  width: 40%;
-  background-color: white;
-}
-#formulaire-connexion ::placeholder {
-  color: #999999;
-}
-#formulaire-connexion .row {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-#formulaire-connexion .btn-center {
+#formulaire-connexion h1 {
   text-align: center;
+  padding: 2% 0% 2% 0%;
 }
-#formulaire-connexion .btn-center .btnc {
-  margin: 0;
+#formulaire-connexion .login {
+  border: 2px solid #865AFF;
+  border-radius: 10px;
+  width: 50%;
+  padding: 0% 4% 0% 4%;
+  margin-bottom: 5%;
+  background-color: white;
 }
-#formulaire-connexion p {
+#formulaire-connexion .login h2 {
+  text-align: center;
+  margin: 3% 0% 3% 0%;
+  font-size: 2rem;
+}
+#formulaire-connexion .login p {
   text-align: center;
   font-size: 0.8rem;
   color: #865AFF;
 }
-#formulaire-connexion h2 {
+#formulaire-connexion .login .btn-center {
   text-align: center;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
-#formulaire-connexion h2:nth-child(6) {
-  text-align: center;
+#formulaire-connexion .login .text-center {
   margin-top: 5%;
-  border-top: 1px solid #865AFF;
-  padding-top: 5%;
 }
-#formulaire-connexion .btn {
+#formulaire-connexion .login .btn {
   padding: 10px 50px;
   color: white;
-  left: 50%;
   background-color: #865AFF;
   border: 1px solid #865AFF;
-  margin-top: 5%;
 }
-#formulaire-connexion .btn:last-child {
-  margin: 0;
-}
-#formulaire-connexion .btn:hover {
+#formulaire-connexion .login .btn:hover {
   background-color: white;
   color: #865AFF;
 }
-#formulaire-connexion .btn:hover a {
+#formulaire-connexion .login .btn:hover a {
   color: #865AFF;
 }
-#formulaire-connexion .btn a {
+#formulaire-connexion .login .btn a {
   text-decoration: none;
 }
-#formulaire-connexion a:visited {
+#formulaire-connexion .login a:visited {
   color: white;
 }
 
