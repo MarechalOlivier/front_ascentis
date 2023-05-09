@@ -12,6 +12,7 @@ import Quotation from "./pages/Quotation/Quotation.jsx";
 import Support_ticket from "./pages/Support_ticket/Support_ticket.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Computer from "./pages/Computer/Computer.jsx";
+import List_ticket from "./pages/List_ticket/List_ticket.jsx";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/admin/profil" element={<Profil />} />
         <Route path="/admin/quotation" element={<Quotation />} />
         <Route path="/admin/support_ticket" element={<Support_ticket />} />
+        <Route path="/admin/list_ticket" element={<List_ticket />} />
         
         
 

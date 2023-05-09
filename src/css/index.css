@@ -333,7 +333,7 @@ footer .social-links p {
 }
 #formulaire-connexion .login h2 {
   text-align: center;
-  margin: 3% 0% 3% 0%;
+  margin: 5% 0% 3% 0%;
   font-size: 2rem;
 }
 #formulaire-connexion .login p {
@@ -368,6 +368,13 @@ footer .social-links p {
   color: white;
 }
 
+#computers {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
 #computers h1 {
   text-align: center;
   padding: 2% 0% 2% 0%;
@@ -377,7 +384,9 @@ footer .social-links p {
 }
 #computers .computer {
   display: flex;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
+  width: 80%;
+  margin: auto;
 }
 #computers .computer .dropdown {
   margin-top: 8%;
@@ -398,21 +407,19 @@ footer .social-links p {
   border: 2px solid #865AFF;
   border-radius: 5px;
   margin: 0% 1% 0% 3%;
-  height: 60vh;
   padding: 1%;
-  text-align: center;
 }
 #computers .computer .computer-search form {
   border-bottom: 1px solid #865AFF;
   padding-bottom: 8%;
 }
 #computers .computer .computer-search form .btn-search {
-  margin-left: 6%;
+  margin-left: 1%;
   border: 1px solid #865AFF;
   border-radius: 5px;
   color: white;
   background-color: #865AFF;
-  padding: 6px 20px;
+  padding: 5px 15px;
 }
 #computers .computer .computer-search form .text-search {
   border: 1px solid #cccccc;
@@ -421,6 +428,73 @@ footer .social-links p {
   padding: 2%;
 }
 #computers .computer .computer-list {
+  width: 80%;
+  border: 2px solid #865AFF;
+  border-radius: 5px;
+  margin: 0% 3% 0% 1%;
+  padding: 1%;
+}
+
+#tickets {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+#tickets h1 {
+  text-align: center;
+  padding: 2% 0% 2% 0%;
+}
+#tickets h2 {
+  margin-bottom: 5%;
+}
+#tickets .ticket {
+  display: flex;
+  padding-bottom: 5%;
+  width: 80%;
+  margin: auto;
+}
+#tickets .ticket .dropdown {
+  margin-top: 8%;
+}
+#tickets .ticket .dropdown .dropdown-menu {
+  background-color: white;
+  width: 100%;
+}
+#tickets .ticket .dropdown .btn {
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+  width: 100%;
+}
+#tickets .ticket .ticket-search {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #865AFF;
+  border-radius: 5px;
+  margin: 0% 1% 0% 3%;
+  padding: 1%;
+}
+#tickets .ticket .ticket-search form {
+  border-bottom: 1px solid #865AFF;
+  padding-bottom: 8%;
+}
+#tickets .ticket .ticket-search form .btn-search {
+  margin-left: 1%;
+  border: 1px solid #865AFF;
+  border-radius: 5px;
+  color: white;
+  background-color: #865AFF;
+  padding: 5px 15px;
+}
+#tickets .ticket .ticket-search form .text-search {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 2%;
+}
+#tickets .ticket .ticket-list {
   width: 80%;
   border: 2px solid #865AFF;
   border-radius: 5px;

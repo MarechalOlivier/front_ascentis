@@ -21,7 +21,7 @@ const Header =() => {
             </div>
             <div className="account">
                 <img src={logoCompte} alt="Logo de compte"/>
-                <Link to="/">Mon Compte</Link>
+                <Link to="/login">Mon Compte</Link>
             </div>
           </div>
           <div className="links">
