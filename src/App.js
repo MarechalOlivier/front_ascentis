@@ -13,6 +13,7 @@ import Support_ticket from "./pages/Support_ticket/Support_ticket.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Computer from "./pages/Computer/Computer.jsx";
 import List_ticket from "./pages/List_ticket/List_ticket.jsx";
+import Ticket_details from "./pages/Ticket_details/Ticket_details.jsx";
 
 
 function App() {
@@ -31,10 +32,11 @@ function App() {
         <Route path="/admin/profil" element={<Profil />} />
         <Route path="/admin/quotation" element={<Quotation />} />
         <Route path="/admin/support_ticket" element={<Support_ticket />} />
-        <Route path="/admin/list_ticket" element={<List_ticket />} />
-        
-        
 
+        <Route path="/admin/list_ticket" element={<List_ticket />} />
+        {/* <Route path="/admin/create-ticket" element={<CreateTicket />} /> */}
+        <Route path="/admin/ticket/:id" element={<Ticket_details />} />
+        {/* <Route path="/admin/ticket/:id/update" element={<UpdateTicket />} /> */}
 
       </Routes>
     </BrowserRouter>
