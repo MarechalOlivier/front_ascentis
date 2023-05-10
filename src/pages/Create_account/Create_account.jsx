@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
-import style from "./style_creat_account.scss";
+import style from "./style_create_account.scss";
 
-const Creat_account = () => {
+const Create_account = () => {
     return (
         <>
             <Header />
@@ -79,4 +79,4 @@ const Creat_account = () => {
     )
 }
 
-export default Creat_account;
+export default Create_account;

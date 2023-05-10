@@ -5,7 +5,7 @@ import Header from "./layout/header/Header.jsx";
 import Footer from "./layout/footer/Footer.jsx";
 //Importation des pages
 import Home from "./pages/Home/Home.jsx";
-import Creat_account from "./pages/Creat_account/Creat_account.jsx";
+import Create_account from "./pages/Create_account/Create_account.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Profil from "./pages/Profil/Profil.jsx";
 import Quotation from "./pages/Quotation/Quotation.jsx";
@@ -28,7 +28,7 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         {/* Admin */}
-        <Route path="/admin/creat_account" element={<Creat_account />} />
+        <Route path="/admin/create_account" element={<Create_account />} />
         <Route path="/admin/profil" element={<Profil />} />
         <Route path="/admin/quotation" element={<Quotation />} />
         <Route path="/admin/support_ticket" element={<Support_ticket />} />
