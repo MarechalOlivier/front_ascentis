@@ -1,18 +1,64 @@
 
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 
 import style from "./style_list_ticket.scss";
 
 const List_ticket =() => {
+
+    const [ticketsData, setTicketsData] = useState([]);
+
+  // je récupère la fonction navigate du react router
+  const navigate = useNavigate();
+
+  // je fais l'appel fetch vers l'url de mon api (qui est en local)
+  // et qui renvoie un json contenant la liste des coworkings en BDD
+  // quand l'appel est terminé, je stocke les données récupérées
+  // dans le state, ce qui force mon composant à se recharger
+
+  useEffect(() => {
+    fetch("http://localhost:3005/api/ticket")
+      .then((ticketsDataJson) => {
+        return ticketsDataJson.json();
+      })
+      .then((ticketsDataJs) => {
+        setTicketsData(ticketsDataJs.data);
+      });
+  }, []);
+
+  const handleDeleteClick = (ticket) => {
+    const token = localStorage.getItem("jwt");
+
+    // je fais un appel fetch vers l'url de mon api avec la méthode DELETE
+    // et je passe l'id du coworking à supprimer en paramètre de l'url
+    fetch("http://localhost:3005/api/ticket/" + ticket.id, {
+      method: "DELETE",
+      // si l'url de mon api nécessite une authentification
+      // je lui passe le JWT stocké en localStorage dans le header
+      // de la requête
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+      // quand le fetch est terminé, je recharge la page actuelle grâce
+      // à la fonction navigate du react router
+      .then(() => {
+        navigate(0);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+
     return(
         <>
             <Header />
             <main>
                 <section id="tickets">
-                    <h1>List des tickets</h1>
+                    <h1>Liste des tickets</h1>
                     
                     <div className="ticket">
                         
@@ -64,12 +110,37 @@ const List_ticket =() => {
                          </div>  
 
                         <div className="ticket-list">
-                            <h2>Tickets</h2>
-                            <ul>
-                                <li>
-                                    <Link to="/computer/1">Ordinateur</Link>
-                                </li>
-                            </ul>
+
+                            {ticketsData.map((ticket) => {
+                                return (
+                                    <div key={ticket.id}>
+
+                                        <div className="table">
+                                            <div className="ticket-title">
+                                                <h2>{ticket.client_name}</h2>
+                                                <p>Priorité : {ticket.urgency}</p>
+                                            </div>
+
+                                            {/* 
+                                            Je créé un lien (grâce au react router)
+                                            vers la page de détail du ticket
+                                            et je lui passe en parametre l'id du ticket actuel
+                                        */}
+                                            <div className="ticket-content">
+                                                <Link to={`/admin/ticket/${ticket.id}`}>Voir le ticket</Link>
+                                                <Link to={`/admin/ticket/${ticket.id}/update`}>modifier le ticket</Link>
+                                                {/* 
+                                            créé un bouton avec un event listener
+                                            passe le ticket actuel en paramètre de la fonction handleDeleteClick
+                                            */}
+
+                                                <button className="btn" onClick={() => handleDeleteClick(ticket)}>Supprimer le ticket</button>
+                                            </div>
+                                       </div>
+                                        
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div> 
                 </section>

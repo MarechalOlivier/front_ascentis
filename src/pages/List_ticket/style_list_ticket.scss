@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
     
     
@@ -94,6 +94,44 @@
                 border-radius: 5px;
                 margin: 0% 3% 0% 1%;
                 padding: 1%;
+                
+                    h2 {
+                        margin-bottom: 0;
+                    }
+
+                    .table {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                    
+
+                            .ticket-title {
+                                
+
+                            }
+
+                            .ticket-content {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                align-items: center;
+                
+                                a{
+                                margin-left: 2%;
+                                text-align: center;
+                                width: 80%;
+                                
+                                }
+                                button{
+                                    margin-left: 2%;
+                                    text-align: center;
+                                    
+                                    }
+                                    
+                            }
+                            
+                    }
                 
                 
             }
