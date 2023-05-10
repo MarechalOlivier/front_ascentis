@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
+
 import style from "./style_ticket_details.scss";
 
 const Tickets_details = () => {
@@ -51,6 +52,7 @@ const Tickets_details = () => {
                                 </p>
                             )}
                         </div>
+                        <Link className="btn" to="/admin/list_ticket">Retour à la liste des tickets</Link>
                     </div>
                 </>
             ) : (

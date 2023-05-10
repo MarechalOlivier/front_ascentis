@@ -248,7 +248,7 @@ footer .first-footer ul img {
 }
 #formulaire-contact .contact h2 {
   text-align: center;
-  padding: 4% 0% 4% 0%;
+  padding: 3% 0% 2% 0%;
   font-size: 2rem;
 }
 #formulaire-contact .contact .form {
@@ -527,6 +527,44 @@ footer .first-footer ul img {
 #tickets .ticket .ticket-list .table .ticket-content button {
   margin-left: 2%;
   text-align: center;
+}
+
+.ticket-details {
+  text-align: center;
+}
+.ticket-details h1 {
+  margin: 1%;
+}
+.ticket-details .btn {
+  padding: 10px 50px;
+  color: white;
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+  margin-top: 3%;
+}
+.ticket-details .btn:hover {
+  background-color: white;
+  color: #865AFF;
+}
+.ticket-details .btn:hover a {
+  color: #865AFF;
+}
+.ticket-details .btn a {
+  text-decoration: none;
+}
+.ticket-details a:visited {
+  color: white;
+}
+
+.content {
+  border: 2px solid #865AFF;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+}
+.content h2 {
+  margin: 1%;
 }
 
 /*# sourceMappingURL=index.css.map */
