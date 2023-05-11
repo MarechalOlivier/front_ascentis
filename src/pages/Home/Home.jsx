@@ -20,7 +20,7 @@ import Footer from "../../layout/footer/Footer";
 import style from "../Home/style_home.scss"
 
 const Home =() => {
-
+   
 return(
     <>
         <Header />

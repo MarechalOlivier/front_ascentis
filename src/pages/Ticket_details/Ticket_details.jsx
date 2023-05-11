@@ -33,7 +33,7 @@ const Tickets_details = () => {
                 <>
                     <div className="ticket-details">
                         <h1>Détail du ticket</h1>
-                        <div className="content">
+                        <div className="content-details">
                             <h2>{ticket.client_name}</h2>
                             <p>Numéro de client : {ticket.client_number}</p>
                             <p>Type : {ticket.type}</p>

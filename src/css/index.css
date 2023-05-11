@@ -556,14 +556,14 @@ footer .first-footer ul img {
   color: white;
 }
 
-.content {
+.content-details {
   border: 2px solid #865AFF;
   border-radius: 5px;
   width: 50%;
   margin: auto;
   margin-top: 2%;
 }
-.content h2 {
+.content-details h2 {
   margin: 1%;
 }
 

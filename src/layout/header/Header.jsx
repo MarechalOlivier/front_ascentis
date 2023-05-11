@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { useNavigate, Link, Navigate } from 'react-router-dom';
 import logo from "../img/logo_c.png"
 import logoCompte from "../img/logo_compte.png"
 
@@ -7,6 +7,11 @@ import style from "../header/style_header.scss"
 
 
 const Header =() => {
+
+ 
+
+    
+
   return (
     <>
       <header>
@@ -15,13 +20,13 @@ const Header =() => {
             <div className="logo">
               <Link to="/"><img src={logo} alt="Logo de l'entreprise"/></Link>
             </div>
-            <div class="search">
+            <div className="search">
               <input type="text" placeholder="Recherche"/>
               <button type="submit">Rechercher</button>
             </div>
             <div className="account">
                 <img src={logoCompte} alt="Logo de compte"/>
-                <Link to="/login">Mon Compte</Link>
+                <Link to="/admin/account">Mon Compte</Link>
             </div>
           </div>
           <div className="links">

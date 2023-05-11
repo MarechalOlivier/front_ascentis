@@ -7,7 +7,7 @@ import Footer from "./layout/footer/Footer.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Create_account from "./pages/Create_account/Create_account.jsx";
 import Login from "./pages/Login/Login.jsx";
-import Profil from "./pages/Profil/Profil.jsx";
+import Account from "./pages/Account/Account.jsx";
 import Quotation from "./pages/Quotation/Quotation.jsx";
 import Support_ticket from "./pages/Support_ticket/Support_ticket.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
@@ -29,7 +29,7 @@ function App() {
 
         {/* Admin */}
         <Route path="/admin/create_account" element={<Create_account />} />
-        <Route path="/admin/profil" element={<Profil />} />
+        <Route path="/admin/account" element={<Account />} />
         <Route path="/admin/quotation" element={<Quotation />} />
         <Route path="/admin/support_ticket" element={<Support_ticket />} />
 
