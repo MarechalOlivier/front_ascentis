@@ -372,6 +372,118 @@ footer .first-footer ul img {
   color: white;
 }
 
+#account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#account h1 {
+  text-align: center;
+  padding: 2% 0% 2% 0%;
+}
+#account .content-account {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid #865AFF;
+  border-radius: 10px;
+  width: 50%;
+  margin-bottom: 5%;
+  padding: 1% 0% 1% 0%;
+}
+#account .content-account .ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 4% 0% 4%;
+  padding: 1%;
+  width: 100%;
+  margin-bottom: 2%;
+}
+#account .content-account .ticket .line-ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 4% 2% 4%;
+  padding: 1%;
+  border: 1px solid #865AFF;
+  border-radius: 10px;
+  width: 100%;
+}
+#account .content-account .ticket .line-ticket h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#account .content-account .ticket .line-ticket p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #999;
+}
+#account .content-account .ticket .line-ticket .btn {
+  padding: 10px 50px;
+  color: white;
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+}
+#account .content-account .ticket .line-ticket .btn:hover {
+  background-color: white;
+  color: #865AFF;
+}
+#account .content-account .ticket .line-ticket .btn:hover a {
+  color: #865AFF;
+}
+#account .content-account .ticket .line-ticket .btn a {
+  text-decoration: none;
+}
+#account .content-account .ticket .line-ticket a:visited {
+  color: white;
+}
+#account .content-account .infos {
+  display: flex;
+  flex-wrap: wrap;
+}
+#account .content-account .infos .line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 4% 2% 4%;
+  padding: 1%;
+  border: 1px solid #865AFF;
+  border-radius: 10px;
+  width: 42%;
+}
+#account .content-account .infos .line h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#account .content-account .infos .line p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #999;
+}
+#account .content-account .infos .line .btn {
+  padding: 10px 50px;
+  color: white;
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+}
+#account .content-account .infos .line .btn:hover {
+  background-color: white;
+  color: #865AFF;
+}
+#account .content-account .infos .line .btn:hover a {
+  color: #865AFF;
+}
+#account .content-account .infos .line .btn a {
+  text-decoration: none;
+}
+#account .content-account .infos .line a:visited {
+  color: white;
+}
+
 #computers {
   background-repeat: no-repeat;
   background-size: cover;
