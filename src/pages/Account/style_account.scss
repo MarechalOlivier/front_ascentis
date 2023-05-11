@@ -1,0 +1,177 @@
+#account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        padding: 2% 0% 2% 0%;
+    }
+
+    .content-account {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 2px solid #865AFF;
+        border-radius: 10px;
+        width: 50%;
+        margin-bottom: 5%;
+        padding: 1% 0% 1% 0%;
+
+        .ticket {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0% 4% 0% 4%;
+            padding: 1%;
+            width: 100%;
+            margin-bottom: 2%;
+
+
+            .line-ticket {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin: 2% 4% 2% 4%;
+                padding: 1%;
+                border: 1px solid #865AFF;
+                border-radius: 10px;
+                width: 100%;
+
+
+
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    color: #999;
+                }
+
+                .btn {
+
+                    padding: 10px 50px;
+                    color: white;
+                    background-color: #865AFF;
+                    border: 1px solid #865AFF;
+
+                }
+
+                .btn:hover {
+                    background-color: white;
+                    color: #865AFF;
+
+                    a {
+                        color: #865AFF;
+                    }
+                }
+
+                .btn a {
+                    text-decoration: none;
+
+                }
+
+                a:visited {
+                    color: white
+                }
+            }
+        }
+
+
+
+        .infos {
+            display: flex;
+            flex-wrap: wrap;
+
+
+            .line {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin: 2% 4% 2% 4%;
+                padding: 1%;
+                border: 1px solid #865AFF;
+                border-radius: 10px;
+                width: 42%;
+
+
+
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    color: #999;
+                }
+
+                .btn {
+
+                    padding: 10px 50px;
+                    color: white;
+                    background-color: #865AFF;
+                    border: 1px solid #865AFF;
+
+                }
+
+                .btn:hover {
+                    background-color: white;
+                    color: #865AFF;
+
+                    a {
+                        color: #865AFF;
+                    }
+                }
+
+                .btn a {
+                    text-decoration: none;
+
+                }
+
+                a:visited {
+                    color: white
+                }
+            }
+        }
+    }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
