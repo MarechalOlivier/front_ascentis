@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
-
 import style from "./style_ticket_details.scss";
 
-const Tickets_details = () => {
+
+const Ticket_details = () => {
     // je créé un state pour stocker un coworking
     const [ticket, setTicket] = useState(null);
+
+    const navigate = useNavigate();
   
     // je récupère l'id présent dans l'url
     const { id } = useParams();
   
+   
     // j'utilise useEffect, pour executer l'appel à l'api
     // une seule fois, au chargement du composant
     useEffect(() => {
@@ -25,7 +28,36 @@ const Tickets_details = () => {
           setTicket(responseJs.data);
         });
     }, [id]); 
-  
+
+
+
+////////////////////////////////Suppression d'un ticket///////////////////////////////
+    const handleDeleteClick = (ticket) => {
+        const token = localStorage.getItem("jwt");
+    
+        // je fais un appel fetch vers l'url de mon api avec la méthode DELETE
+        // et je passe l'id du coworking à supprimer en paramètre de l'url
+        fetch("http://localhost:3005/api/ticket/" + ticket.id, {
+          method: "DELETE",
+          // si l'url de mon api nécessite une authentification
+          // je lui passe le JWT stocké en localStorage dans le header
+          // de la requête
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+          // quand le fetch est terminé, je recharge la page actuelle grâce
+          // à la fonction navigate du react router
+          .then(() => { 
+            navigate(0); 
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      };
+////////////////////////////////////////////////////////////////////////////////////////  
+
+
     return (
         <div>
             <Header />
@@ -39,28 +71,39 @@ const Tickets_details = () => {
                             <p>Type : {ticket.type}</p>
                             <p>Urgence : {ticket.urgency}</p>
                             <p>Catégorie : {ticket.category}</p>
+                            <p>Sujet : {ticket.subject}</p>
                             <p>Description : {ticket.description}</p>
 
                             {/* 
                                 Vu que l'adresse n'est pas obligatoire
                                 je vérifie qu'elle existe avant de l'afficher
                                 */}
-                            {ticket.address && (
+                            {ticket.address && ( 
                                 <p>
-                                    Adresse : {ticket.address.number} {ticket.address.street} - {ticket.address.postCode},{" "}
-                                    {ticket.address.city}
+                                    Adresse : {ticket.address.address} {ticket.address.postCode} - {ticket.address.city}
+                                   
                                 </p>
                             )}
+                            <p>Téléphone : {ticket.phone}</p>
+
+                            <div className="ticket-content">
+                                
+                                <Link to={`/admin/ticket/${ticket.id}/update`}>modifier le ticket</Link>
+                                   
+
+                                <button className="btn" onClick={() => handleDeleteClick(ticket)}>Supprimer le ticket</button>
+                            </div>
                         </div>
                         <Link className="btn" to="/admin/list_ticket">Retour à la liste des tickets</Link>
                     </div>
                 </>
             ) : (
-                <p>Pas de ticket trouvé</p>
+                <p>Le ticket a bien été supprimé</p>
             )}
         </div>
     );
-};
+    
+}
   
-  export default Tickets_details;
+export default Ticket_details;
   

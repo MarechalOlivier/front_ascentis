@@ -58,9 +58,9 @@ const Account =() => {
                                 <button className="btn btn-primary">Modifier</button>
                             </div>
                             <div className="line">
-                                <h3>Mes adresses de livraison</h3>
-                                <p>Gérer vos adresses de livraison pour vos commandes</p>
-                                <button className="btn btn-primary">Modifier</button>
+                                <h3>Liste des tickets</h3>
+                                <p>Gérer les tickets</p>
+                                <button className="btn btn-primary"><Link to="/admin/list_ticket">Gérer les tickets</Link></button>
                             </div>
                             <div className="line">
                                 <h3>Mes commandes et factures</h3>
