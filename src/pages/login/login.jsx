@@ -36,19 +36,17 @@ const Login =() => {
           // le serveur express me renvoie un JWT
           // si les infos sont valides (username et password
           // correspondent à un utilisateur en BDD)
-          .then((responseJson) => {           
-            if (responseJson.ok) {             
-              // L'authentification a réussi, je stocke le JWT dans le localStorage
-              const jwt = responseJson.token;
-              localStorage.setItem("jwt", jwt);      
-              // redirection vers la page d'accueil si l'authentification a réussi
-              window.location.href = "http://localhost:3000/";
-            } else {
-              // L'authentification a échoué, j'affiche un message d'erreur
-              alert("Nom d'utilisateur ou mot de passe incorrect !");                     
-            }
-          })
-            
+        .then(response => response.json())
+        .then(data => {
+        if (data.token) {
+            const jwt = data.token;
+            localStorage.setItem("jwt", jwt);
+            window.location.href = "http://localhost:3000/";
+        } else {
+            alert("Nom d'utilisateur ou mot de passe incorrect !");
+        }
+        })
+             
       };
 
 

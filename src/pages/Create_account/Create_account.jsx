@@ -45,7 +45,7 @@ const Create_account = () => {
                                 <input type="text" className="form-control" id="inputCity" required />
                             </div>
                             <div className="col-md-4">
-                                <label for="inputState" className="form-label">Pays *</label>
+                                <label htmlFor="inputState" className="form-label">Pays *</label>
                                 <select id="inputState" className="form-select">
                                     <option selected>Choisir...</option>
                                     <option>France (métropolitaine)</option>
@@ -55,7 +55,7 @@ const Create_account = () => {
                                 </select>
                             </div>
                             <div className="col-md-2">
-                                <label for="inputZip" className="form-label">Code Postal</label>
+                                <label htmlFor="inputZip" className="form-label">Code Postal</label>
                                 <input type="text" className="form-control" id="inputZip" />
                             </div>
                             <div className="col-12 text-center">

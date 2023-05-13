@@ -4,56 +4,64 @@ import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 import style from "./style_create_ticket.scss";
 
+const Create_ticket = () => {
 
-
-const Create_ticket =() => {
-
-    const navigate = useNavigate();
-  // si l'utilisateur n'est pas connecté
-  // donc qu'il n'a pas de jwt dans le localStorage
-  // on le redirige vers la page de connexion
-
-
-///////////////////////////Autorisation JWT//////////////////
+////////////////////////////////Authentification JWT + durée de validité du token ///////////////////////////   
+  const navigate = useNavigate();
+  // Autorisation JWT
   useEffect(() => {
-    if (!localStorage.getItem("jwt")) {
+    const token = localStorage.getItem("jwt");
+    if (!token) {
       navigate("/login");
+      return;
     }
+    // Décode le token JWT pour récupérer la date d'expiration
+    const jwtData = token.split(".")[1];
+    const decodedJwt = JSON.parse(atob(jwtData));
+    const expirationTime = decodedJwt.exp * 1000; // Convertit la date d'expiration en millisecondes
+
+    // Redirige vers la page de connexion lorsque le jeton expire
+    const timeoutId = setTimeout(() => {
+      navigate("/login");
+    }, expirationTime - Date.now()); // Définit le délai en millisecondes avant la redirection
+
+    // Nettoie le timeout lorsque le composant est démonté
+    return () => clearTimeout(timeoutId);
   }, [navigate]);
-////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-  // je créé un event listener quand le formulaire est validé
+
+  // Gère la soumission du formulaire
   const handleSubmit = (event) => {
-    // j'utilise l'objet event, fourni automatiquement par le navigateur
-    // pour empêcher que la page soit rechargée (comportement par défaut)
     event.preventDefault();
+    
+   
+    // Récupère les valeurs des champs du formulaire
+const client_name = event.target.client_name.value;
+const client_number = event.target.client_number.value;
+const type = event.target.type.value;
+const urgency = event.target.urgency.value;
+const category = event.target.category.value;
+const subject = event.target.subject.value;
+const description = event.target.description.value;
+const address = event.target.address.value;
+const postCode = event.target.postCode.value;
+const city = event.target.city.value;
+const phone = event.target.phone.value;
 
-    // je récupère les valeurs des champs du formulaire
-    // et on les stocke dans des variables
-    const client_name = event.target.cleint_name.value;
-    const client_number = event.target.client_number.value;
-    const type = event.target.type.value;
-    const urgency = event.target.urgency.value;
-    const category = event.target.category.value;
-    const description = event.target.description.value;
-    const number = event.target.number.value;
-    const street = event.target.street.value;
-    const postCode = event.target.postCode.value;
-    const city = event.target.city.value;
+    
+    
 
+    // Récupère le jeton JWT stocké dans le local storage   
+    const token = localStorage.getItem("jwt");
 
-    // on fait un appel vers l'API (express)
-    // on lui spécifie la méthode POST (pour créer)
-    // et on lui passe en "body" les données du formulaire
-    // attention, il faut que les données soient au format JSON
-    // donc on utilise JSON.stringify
-    // il faut que les donnnées envoyées correspondent
-    // à ce qui est attendu par l'API
+    // Envoie une requête POST à l'API pour créer un ticket   
     fetch("http://localhost:3005/api/ticket", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`, // Ajoute le jeton dans le header de la requête POST pour l'authentification 
       },
       body: JSON.stringify({
         client_name: client_name,
@@ -61,13 +69,14 @@ const Create_ticket =() => {
         type: type,
         urgency: urgency,
         category: category,
+        subject: subject,
         description: description,
         address: {
-            number: number,
-            street: street,
+            address: address,
             postCode: postCode,
             city: city,
         },
+        phone: phone,
         
       }),
 
@@ -85,11 +94,89 @@ const Create_ticket =() => {
     });
   };
 
+  console.log("Le formulaire a été soumis");
 
-    return(
+
+    return (
         <>
             <Header />
-            <form onSubmit={handleSubmit}>
+
+            <section id="create-tickets">
+                <h1>Création de ticket</h1>
+                <div className="content-ticket">
+                    <form onSubmit={handleSubmit}>
+                        <h2>Informations ticket</h2>
+                        <div className="line">
+                            <label htmlFor="client_name">Nom du client</label>
+                            <input type="text" name="client_name" />
+                        </div>
+                        <div className="line">
+                            <label htmlFor="client_number">Numéro de client</label>
+                            <input type="number" name="client_number" />
+                        </div>
+                        <div className="line">
+                            <label htmlFor="type">Type</label>
+                            <input type="text" name="type" />               {/* A voir si on peut faire un select */}
+                        </div>
+                        <div className="line">
+                            <label htmlFor="urgency">Urgence</label>        {/* A voir si on peut faire un select */}
+                            <input type="text" name="urgency" />
+                        </div>
+                        <div className="line">
+                            <label htmlFor="subject">Sujet</label>  
+                            <input type="text" name="subject" />
+                        </div>
+                        <div className="line">
+                            <label htmlFor="category">Catégorie</label>     {/* A voir si on peut faire un select */}
+                            <input type="text" name="category" />
+                        </div>                       
+                        <div className="line">
+                            <label htmlFor="description">Description</label>
+                            <input type="textarea" name="description" />
+                        </div> 
+                        <h2>Coordonnées</h2>                                         
+                        <div className="line">
+                            <label htmlFor="address">Adresse</label>
+                            <input type="text" name="address" />
+                        </div>
+                        <div className="line">
+                            <label htmlFor="postCode">Code postal</label>
+                            <input type="number" name="postCode" />
+                        </div>
+                        <div className="line">
+                            <label htmlFor="city">Ville</label>
+                            <input type="text" name="city" />
+                        </div>
+                        <div className="line">
+                            <label htmlFor="phone">Téléphone</label>
+                            <input type="number" name="phone" />
+                        </div>
+                    
+                        <div className="validate">
+                            <button className="btn" type="submit">Créer</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <Footer />
+        </>
+
+    )
+}
+
+export default Create_ticket;
+
+
+
+
+
+
+
+
+
+
+
+            {/* <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="client_name">Nom du client</label>
                     <input type="text" name="client_name" />
@@ -114,17 +201,9 @@ const Create_ticket =() => {
                     <label htmlFor="description">Description</label>
                     <input type="text" name="description" />
                 </div>
-                <div>
+                {/* <div>
                     <label htmlFor="address">Adresse</label>
                     <input type="text" name="address" />
-                </div>
+                </div> 
 
-                <button type="submit">Valider</button>
-
-            </form>
-            <Footer />
-        </>
-    )
-}
-
-export default Create_ticket;
+                <button type="submit">Valider</button> */}
