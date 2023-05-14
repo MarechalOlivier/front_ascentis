@@ -127,14 +127,7 @@ const List_ticket =() => {
                                             et je lui passe en parametre l'id du ticket actuel
                                         */}
                                             <div className="ticket-content">
-                                                <Link to={`/admin/ticket/${ticket.id}`}>Voir le ticket</Link>
-                                                <Link to={`/admin/ticket/${ticket.id}/update`}>modifier le ticket</Link>
-                                                {/* 
-                                            créé un bouton avec un event listener
-                                            passe le ticket actuel en paramètre de la fonction handleDeleteClick
-                                            */}
-
-                                                <button className="btn" onClick={() => handleDeleteClick(ticket)}>Supprimer le ticket</button>
+                                                <Link to={`/admin/ticket/${ticket.id}`}>Voir le ticket</Link>                                              
                                             </div>
                                        </div>
                                         

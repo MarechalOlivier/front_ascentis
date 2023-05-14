@@ -630,6 +630,7 @@ footer .first-footer ul img {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  width: 20%;
 }
 #tickets .ticket .ticket-list .table .ticket-content a {
   margin-left: 2%;
