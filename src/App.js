@@ -15,6 +15,7 @@ import Computer from "./pages/Computer/Computer.jsx";
 import List_ticket from "./pages/List_ticket/List_ticket.jsx";
 import Ticket_details from "./pages/Ticket_details/Ticket_details.jsx";
 import Create_ticket from "./pages/Create_ticket/Create_ticket.jsx";
+import Update_ticket from "./pages/Update_ticket/Update_ticket.jsx";
 
 function App() {
   return (
@@ -30,13 +31,14 @@ function App() {
         {/* Admin */}
         <Route path="/admin/create_account" element={<Create_account />} />
         <Route path="/admin/account" element={<Account />} />
-        <Route path="/admin/quotation" element={<Quotation />} />
-        <Route path="/admin/support_ticket" element={<Support_ticket />} />
+        {/* {/* <Route path="/admin/quotation" element={<Quotation />} />  */}
+        {/* <Route path="/admin/support_ticket" element={<Support_ticket />} /> */}
 
         <Route path="/admin/list_ticket" element={<List_ticket />} />
         <Route path="/admin/create_ticket" element={<Create_ticket />} />
+        <Route path="/admin/ticket/:id/update" element={<Update_ticket />} />
         <Route path="/admin/ticket/:id" element={<Ticket_details />} />
-        {/* <Route path="/admin/ticket/:id/update" element={<UpdateTicket />} /> */}
+        
 
       </Routes>
     </BrowserRouter>
