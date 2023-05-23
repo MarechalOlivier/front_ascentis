@@ -19,7 +19,7 @@ const Ticket_details = () => {
     // une seule fois, au chargement du composant
     useEffect(() => {
       // je fais un appel fetch, vers l'url de l'api pour récupérer
-      //  un coworking en fonction de l'id présent dans l'url
+      //  un ticket en fonction de l'id présent dans l'url
       fetch(`http://localhost:3005/api/ticket/${id}`)
         .then((responseJson) => responseJson.json())
         .then((responseJs) => {
@@ -33,7 +33,7 @@ const Ticket_details = () => {
 
 ////////////////////////////////Suppression d'un ticket///////////////////////////////
     const handleDeleteClick = (ticket) => {
-        const token = localStorage.getItem("jwt");
+        const token = localStorage.getItem("jwt"); // Récupère le jeton d'authentification dans le localStorage
     
         // je fais un appel fetch vers l'url de mon api avec la méthode DELETE
         // et je passe l'id du coworking à supprimer en paramètre de l'url
@@ -43,7 +43,7 @@ const Ticket_details = () => {
           // je lui passe le JWT stocké en localStorage dans le header
           // de la requête
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${token}`, // Ajoute le jeton dans le header de la requête POST pour l'authentification
           },
         })
           // quand le fetch est terminé, je recharge la page actuelle grâce
@@ -52,7 +52,7 @@ const Ticket_details = () => {
             navigate(0); 
           })
           .catch((error) => {
-            console.log(error);
+            console.log((error) + ("Erreur lors de la suppression du ticket"));
           });
       };
 ////////////////////////////////////////////////////////////////////////////////////////  
@@ -84,11 +84,11 @@ const Ticket_details = () => {
                                    
                                 </p>
                             )}
-                            <p>Téléphone : {ticket.phone}</p>
+                            {/* <p>Téléphone : {ticket.phone}</p> */}
 
                             <div className="ticket-content">
                                 
-                                <Link to={`/admin/ticket/${ticket.id}/update`}>modifier le ticket</Link>
+                            <button className="btn" ><Link to={`/admin/ticket/${ticket.id}/update`}>modifier le ticket</Link></button>
                                    
 
                                 <button className="btn" onClick={() => handleDeleteClick(ticket)}>Supprimer le ticket</button>
@@ -100,6 +100,7 @@ const Ticket_details = () => {
             ) : (
                 <p>Le ticket a bien été supprimé</p>
             )}
+            <Footer />
         </div>
     );
     

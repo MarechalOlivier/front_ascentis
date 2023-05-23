@@ -65,10 +65,10 @@ const Update_ticket = () => {
         const category = event.target.category.value;
         const subject = event.target.subject.value;
         const description = event.target.description.value;
-        const address = event.target.address.value;
-        const postCode = event.target.postCode.value;
-        const city = event.target.city.value;
-        const phone = event.target.phone.value;
+        // const address = event.target.address.value;
+        // const postCode = event.target.postCode.value;
+        // const city = event.target.city.value;
+        // const phone = event.target.phone.value;
 
 
 
@@ -91,12 +91,12 @@ const Update_ticket = () => {
                 category: category,
                 subject: subject,
                 description: description,
-                address: {
-                    address: address,
-                    postCode: postCode,
-                    city: city,
-                },
-                phone: phone,
+                // address: {
+                //     address: address,
+                //     postCode: postCode,
+                //     city: city,
+                // },
+                // phone: phone,
 
             }),
 
@@ -122,40 +122,43 @@ const Update_ticket = () => {
             <Header />
             {ticket ? (
                 <>
-                    <section id="create-tickets">
+                    <section id="update-tickets">
                         <h1>Modification ticket</h1>
-                        <div className="content-ticket">
+                        <div className="update-ticket">
                             <form onSubmit={handleSubmit}>
-                                <h2>Modification du ticket : {ticket.client_name} </h2>
-                                <div className="line">
-                                    <label htmlFor="client_name">Nom du client</label>
-                                    <input type="text" name="client_name" defaultValue={ticket.client_name} />
+                                <div className="update-ticket-line">
+                                    <h2>Modification du ticket : {ticket.client_name} </h2>
+                                    <div className="line">
+                                        <label htmlFor="client_name">Nom du client</label>
+                                        <input type="text" name="client_name" defaultValue={ticket.client_name} />
+                                    </div>
+                                    <div className="line">
+                                        <label htmlFor="client_number">Numéro de client</label>
+                                        <input type="number" name="client_number" defaultValue={ticket.client_number} />
+                                    </div>
+                                    <div className="line">
+                                        <label htmlFor="type">Type</label>
+                                        <input type="text" name="type" defaultValue={ticket.type} />               {/* A voir si on peut faire un select */}
+                                    </div>
+                                    <div className="line">
+                                        <label htmlFor="urgency">Urgence</label>                                    {/* A voir si on peut faire un select */}
+                                        <input type="text" name="urgency" defaultValue={ticket.urgency} />
+                                    </div>
+                                    <div className="line">
+                                        <label htmlFor="subject">Sujet</label>
+                                        <input type="text" name="subject" defaultValue={ticket.subject} />
+                                    </div>
+                                    <div className="line">
+                                        <label htmlFor="category">Catégorie</label>                                 {/* A voir si on peut faire un select */}
+                                        <input type="text" name="category" defaultValue={ticket.category} />
+                                    </div>
+                                    <div className="line">
+                                        <label htmlFor="description">Description</label>
+                                        <input type="textarea" name="description" defaultValue={ticket.description} />
+                                    </div>
                                 </div>
-                                <div className="line">
-                                    <label htmlFor="client_number">Numéro de client</label>
-                                    <input type="number" name="client_number" defaultValue={ticket.client_number} />
-                                </div>
-                                <div className="line">
-                                    <label htmlFor="type">Type</label>
-                                    <input type="text" name="type" defaultValue={ticket.type} />               {/* A voir si on peut faire un select */}
-                                </div>
-                                <div className="line">
-                                    <label htmlFor="urgency">Urgence</label>                                    {/* A voir si on peut faire un select */}
-                                    <input type="text" name="urgency" defaultValue={ticket.urgency} />
-                                </div>
-                                <div className="line">
-                                    <label htmlFor="subject">Sujet</label>
-                                    <input type="text" name="subject" defaultValue={ticket.subject} />
-                                </div>
-                                <div className="line">
-                                    <label htmlFor="category">Catégorie</label>                                 {/* A voir si on peut faire un select */}
-                                    <input type="text" name="category" defaultValue={ticket.category} />
-                                </div>
-                                <div className="line">
-                                    <label htmlFor="description">Description</label>
-                                    <input type="textarea" name="description" defaultValue={ticket.description} />
-                                </div>
-                                <h2>Coordonnées</h2>
+
+                                {/* <h2>Coordonnées</h2>
                                 <div className="line">
                                     <label htmlFor="address">Adresse</label>
                                     <input type="text" name="address" defaultValue={ticket.address.address} />
@@ -171,7 +174,8 @@ const Update_ticket = () => {
                                 <div className="line">
                                     <label htmlFor="phone">Téléphone</label>
                                     <input type="number" name="phone" defaultValue={ticket.phone} />
-                                </div>
+                                </div> */}
+
                                 <div className="validate">
                                     <button className="btn" type="submit">Modifier</button>
                                 </div>

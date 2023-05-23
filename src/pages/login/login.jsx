@@ -20,7 +20,7 @@ const Login =() => {
       
         // je fais une requête vers l'api (express)
         // sur l'url login avec la méthode POST
-        fetch("http://localhost:3005/api/user/login", { // Promesse faite avec la méthode fetch
+        fetch("http://localhost:3005/api/customer/login", { // Promesse faite avec la méthode fetch
           method: "POST",
           headers: {
             "Content-Type": "application/json", // Je précise que je vais envoyer du JSON
@@ -33,28 +33,25 @@ const Login =() => {
             password: password,// Je récupère les données password du formulaire
           }),
         })
-          // le serveur express me renvoie un JWT
-          // si les infos sont valides (username et password
-          // correspondent à un utilisateur en BDD)
-        .then(response => response.json())
-        .then(data => {
-        if (data.token) {
-            const jwt = data.token;
-            localStorage.setItem("jwt", jwt);
-            window.location.href = "http://localhost:3000/";
-        } else {
-            alert("Nom d'utilisateur ou mot de passe incorrect !");
-        }
+          
+        .then(response => response.json()) // Je transforme la réponse en JSON
+        .then(data => { // Je récupère les données de la réponse
+            
+            if (data.token) { // Si j'ai un token dans la réponse
+                const jwt = data.token; // Je récupère le token
+                localStorage.setItem("jwt", jwt); // Je stocke le token dans le localStorage
+                window.location.href = "http://localhost:3000/admin/account"; // Redirection vers la page account
+            } 
+            else {
+                alert("Nom d'utilisateur ou mot de passe incorrect !");
+            }
         })
              
       };
 
 
 
-      // je créé un formulaire avec deux champs :
-      // username et password
-      // pour connecter mon utilisateur
-      // j'attache un event listener sur le submit du formulaire
+      
     return(
         <>
             <Header />

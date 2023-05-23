@@ -1,49 +1,57 @@
 .ticket-details {
     text-align: center;
 
-        h1 {
-            margin: 1%;
-        }
-        
-        .btn {
-            
-            padding: 10px 50px;
-            color: white;
-            background-color: #865AFF;
-            border: 1px solid #865AFF;
-            margin-top: 3%;
-                                                               
-        }               
-    
-        .btn:hover {
-            background-color: white;
+    h1 {
+        margin: 1%;
+    }
+
+    .ticket-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .btn {
+        padding: 10px 50px;
+        color: white;
+        background-color: #865AFF;
+        border: 1px solid #865AFF;
+        margin: 2% 0% 2% 0%;
+       
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: #865AFF;
+
+        a {
             color: #865AFF;
-                    a{
-                    color: #865AFF;
-                    }           
         }
+    }
 
-        .btn a{
-            text-decoration: none;
-                    
-        }
+    .btn a {
+        text-decoration: none;
 
-        a:visited {
-            color:white
-        }
-    
-    
-    
+    }
+
+    a:visited {
+        color: white
+    }
+
+
+
 
 }
-    .content-details {
-        border: 2px solid #865AFF;
-        border-radius: 5px;
-        width: 50%;
-        margin: auto;
-        margin-top: 2%;
 
-            h2 {
-                margin: 1%;
-            }
+.content-details {
+    border: 2px solid #865AFF;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+
+    h2 {
+        margin: 1%;
     }
+}

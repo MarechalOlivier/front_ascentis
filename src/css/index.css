@@ -648,12 +648,17 @@ footer .first-footer ul img {
 .ticket-details h1 {
   margin: 1%;
 }
+.ticket-details .ticket-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .ticket-details .btn {
   padding: 10px 50px;
   color: white;
   background-color: #865AFF;
   border: 1px solid #865AFF;
-  margin-top: 3%;
+  margin: 2% 0% 2% 0%;
 }
 .ticket-details .btn:hover {
   background-color: white;
@@ -691,123 +696,118 @@ footer .first-footer ul img {
   padding: 2% 0% 2% 0%;
 }
 #create-tickets .content-ticket {
-  border: 2px solid #865AFF;
+  border: 1px solid #865AFF;
   border-radius: 5px;
   width: 50%;
   padding: 0% 4% 0% 4%;
   margin-bottom: 5%;
 }
-#create-tickets .content-ticket form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 10%;
-}
-#create-tickets .content-ticket form :nth-child(9) {
-  border-top: 1px solid #865AFF;
-}
-#create-tickets .content-ticket form h2 {
-  text-align: center;
-  padding: 3%;
-  width: 100%;
-}
-#create-tickets .content-ticket form .line {
-  margin-bottom: 2%;
-  width: 48%;
-}
-#create-tickets .content-ticket form .line label {
-  display: block;
-  margin-bottom: 5px;
-}
-#create-tickets .content-ticket form .line input[type=text],
-#create-tickets .content-ticket form .line input[type=number],
-#create-tickets .content-ticket form .line input[type=textarea] {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  width: 100%;
-}
-#create-tickets .content-ticket form .line input[type=textarea] {
-  height: 100px;
-  width: 800px;
-  margin-bottom: 10%;
-}
-#create-tickets .content-ticket form .btn {
+#create-tickets .content-ticket .btn {
   padding: 10px 50px;
   color: white;
   left: 50%;
   background-color: #865AFF;
   border: 1px solid #865AFF;
-  margin-top: 20%;
+  margin-bottom: 5%;
 }
-#create-tickets .content-ticket form .btn:hover {
+#create-tickets .content-ticket .btn:hover {
   background-color: white;
   color: #865AFF;
 }
+#create-tickets .content-ticket .create-ticket-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#create-tickets .content-ticket .create-ticket-line h2 {
+  text-align: center;
+  padding: 3%;
+  width: 100%;
+}
+#create-tickets .content-ticket .create-ticket-line .line {
+  margin-bottom: 2%;
+  width: 48%;
+}
+#create-tickets .content-ticket .create-ticket-line .line label {
+  display: block;
+  margin-bottom: 5px;
+}
+#create-tickets .content-ticket .create-ticket-line .line input[type=text],
+#create-tickets .content-ticket .create-ticket-line .line input[type=number],
+#create-tickets .content-ticket .create-ticket-line .line input[type=textarea] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+#create-tickets .content-ticket .create-ticket-line .line input[type=textarea] {
+  height: 200px;
+  width: 800px;
+  margin-bottom: 10%;
+}
 
-#create-tickets {
+#update-tickets {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#create-tickets h1 {
+#update-tickets h1 {
   text-align: center;
   padding: 2% 0% 2% 0%;
 }
-#create-tickets .content-ticket {
+#update-tickets .update-ticket {
   border: 2px solid #865AFF;
   border-radius: 5px;
   width: 50%;
   padding: 0% 4% 0% 4%;
   margin-bottom: 5%;
 }
-#create-tickets .content-ticket form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 10%;
-}
-#create-tickets .content-ticket form :nth-child(9) {
-  border-top: 1px solid #865AFF;
-}
-#create-tickets .content-ticket form h2 {
-  text-align: center;
-  padding: 3%;
-  width: 100%;
-}
-#create-tickets .content-ticket form .line {
-  margin-bottom: 2%;
-  width: 48%;
-}
-#create-tickets .content-ticket form .line label {
-  display: block;
-  margin-bottom: 5px;
-}
-#create-tickets .content-ticket form .line input[type=text],
-#create-tickets .content-ticket form .line input[type=number],
-#create-tickets .content-ticket form .line input[type=textarea] {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  width: 100%;
-}
-#create-tickets .content-ticket form .line input[type=textarea] {
-  height: 100px;
-  width: 800px;
-  margin-bottom: 10%;
-}
-#create-tickets .content-ticket form .btn {
+#update-tickets .update-ticket .btn {
   padding: 10px 50px;
   color: white;
   left: 50%;
   background-color: #865AFF;
   border: 1px solid #865AFF;
-  margin-top: 20%;
+  margin-bottom: 5%;
 }
-#create-tickets .content-ticket form .btn:hover {
+#update-tickets .update-ticket .btn:hover {
   background-color: white;
   color: #865AFF;
+}
+#update-tickets .update-ticket .update-ticket-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#update-tickets .update-ticket .update-ticket-line :nth-child(9) {
+  border-top: 1px solid #865AFF;
+}
+#update-tickets .update-ticket .update-ticket-line h2 {
+  text-align: center;
+  padding: 3%;
+  width: 100%;
+}
+#update-tickets .update-ticket .update-ticket-line .line {
+  margin-bottom: 2%;
+  width: 48%;
+}
+#update-tickets .update-ticket .update-ticket-line .line label {
+  display: block;
+  margin-bottom: 5px;
+}
+#update-tickets .update-ticket .update-ticket-line .line input[type=text],
+#update-tickets .update-ticket .update-ticket-line .line input[type=number],
+#update-tickets .update-ticket .update-ticket-line .line input[type=textarea] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+#update-tickets .update-ticket .update-ticket-line .line input[type=textarea] {
+  height: 100px;
+  width: 800px;
+  margin-bottom: 10%;
 }
 
 /*# sourceMappingURL=index.css.map */
