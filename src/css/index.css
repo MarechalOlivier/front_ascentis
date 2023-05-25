@@ -604,6 +604,16 @@ footer .first-footer ul img {
   border-bottom: 1px solid #865AFF;
   padding-bottom: 8%;
 }
+#tickets .ticket .ticket-search form .btnc {
+  background-color: #865AFF;
+  border: 1px solid #865AFF;
+  width: 100%;
+  margin-top: 5%;
+}
+#tickets .ticket .ticket-search form .btnc a {
+  color: white;
+  text-decoration: none;
+}
 #tickets .ticket .ticket-search form .btn-search {
   margin-left: 1%;
   border: 1px solid #865AFF;
