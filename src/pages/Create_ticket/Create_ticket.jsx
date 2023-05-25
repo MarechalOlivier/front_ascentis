@@ -50,7 +50,7 @@ const Create_ticket = () => {
         // const city = event.target.city.value;
         // const phone = event.target.phone.value;
 
-
+        console.log("Le formulaire a été soumis");
 
 
         // Récupère le jeton JWT stocké dans le local storage   
@@ -94,7 +94,7 @@ const Create_ticket = () => {
         });
     };
 
-    console.log("Le formulaire a été soumis");
+    
 
 
     return (

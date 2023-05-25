@@ -9,22 +9,30 @@ const Account = () => {
   const [userName, setUserName] = useState("");
   const [userRoles, setUserRoles] = useState("");
 
-  // Vérification de l'authentification JWT et récupération du nom d'utilisateur
+  // Autorisation JWT
   useEffect(() => {
     const token = localStorage.getItem("jwt");
     if (!token) {
       navigate("/login");
       return;
     }
-    // Décode le token JWT pour récupérer le nom d'utilisateur
-    const jwtData = token.split(".")[1]; 
-    const decodedJwt = JSON.parse(atob(jwtData));
-    const username = decodedJwt.username; // Assurez-vous que la clé correspond à celle utilisée pour stocker le nom d'utilisateur dans le token
-    const roles = decodedJwt.roles; 
 
-    setUserName(username); // Met à jour le nom d'utilisateur dans le state
+    const jwtData = token.split(".")[1];
+    const decodedJwt = JSON.parse(atob(jwtData));
+    const expirationTime = decodedJwt.exp * 1000;
+    const username = decodedJwt.username;
+    const roles = decodedJwt.roles;
+
+    const timeoutId = setTimeout(() => {
+      navigate("/login");
+    }, expirationTime - Date.now());
+
+    setUserName(username);
     setUserRoles(roles);
+    return () => clearTimeout(timeoutId);
   }, [navigate]);
+
+  const isAdmin = userRoles.includes("admin");
 
   return (
     <>
@@ -32,7 +40,7 @@ const Account = () => {
       <main>
         <section id="account">
           <h1>Bienvenue {userName}</h1>
-            <h2>Niveau d'administration : {userRoles}</h2>
+          <h2>Niveau d'administration : {userRoles}</h2>
           <div className="content-account">
             <div className="ticket">
               <div className="line-ticket">
@@ -53,13 +61,15 @@ const Account = () => {
                 <p>Gérer vos informations personnelles</p>
                 <button className="btn btn-primary">Modifier</button>
               </div>
-              <div className="line">
-                <h3>Liste des tickets</h3>
-                <p>Gérer les tickets</p>
-                <button className="btn btn-primary">
-                  <Link to="/admin/list_ticket">Gérer les tickets</Link>
-                </button>
-              </div>
+              {isAdmin && (
+                <div className="line">
+                  <h3>Liste des tickets</h3>
+                  <p>Gérer les tickets</p>
+                  <button className="btn btn-primary">
+                    <Link to="/admin/list_ticket">Gérer les tickets</Link>
+                  </button>
+                </div>
+              )}
               <div className="line">
                 <h3>Mes commandes et factures</h3>
                 <p>Consulter vos commandes et télécharger vos factures</p>
@@ -83,6 +93,7 @@ export default Account;
 
 
 
+
 // import React, { useEffect, useState } from "react";
 // import { Link, useNavigate } from "react-router-dom";
 // import Header from "../../layout/header/Header";
@@ -100,6 +111,9 @@ export default Account;
 //         navigate("/login");
 //         return;
 //       } 
+
+
+
 //       // Décode le token JWT pour récupérer la date d'expiration
 //       const jwtData = token.split(".")[1]; //
 //       const decodedJwt = JSON.parse(atob(jwtData)); //

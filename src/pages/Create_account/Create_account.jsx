@@ -34,7 +34,7 @@ const Create_account = () => {
         
 
         // Envoie une requête POST à l'API pour créer un ticket   
-        fetch("http://localhost:3005/api/customer", {
+        fetch("http://localhost:3005/api/user", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

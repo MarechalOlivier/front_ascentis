@@ -20,7 +20,7 @@ const Login =() => {
       
         // je fais une requête vers l'api (express)
         // sur l'url login avec la méthode POST
-        fetch("http://localhost:3005/api/customer/login", { // Promesse faite avec la méthode fetch
+        fetch("http://localhost:3005/api/user/login", { // Promesse faite avec la méthode fetch
           method: "POST",
           headers: {
             "Content-Type": "application/json", // Je précise que je vais envoyer du JSON

@@ -1,6 +1,6 @@
 nav .first_navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 100px;
   background-color: #2b2b2b;
@@ -12,11 +12,16 @@ nav .first_navbar .logo img {
   width: 100%;
 }
 nav .first_navbar .search input {
-  width: 600px;
+  width: 550px;
   border-radius: 5px;
 }
 nav .first_navbar .search button {
   border-radius: 5px;
+}
+nav .first_navbar .account-logo {
+  display: flex;
+  justify-content: center;
+  width: 15%;
 }
 nav .first_navbar .account {
   display: flex;
@@ -24,7 +29,6 @@ nav .first_navbar .account {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 12%;
 }
 nav .first_navbar .account a {
   text-decoration: none;
@@ -32,7 +36,12 @@ nav .first_navbar .account a {
   margin-left: 2%;
 }
 nav .first_navbar .account img {
-  width: 15%;
+  width: 20%;
+  margin-left: 10%;
+}
+nav .first_navbar .account .account-logo {
+  display: flex;
+  justify-content: center;
 }
 
 nav .links ul {
