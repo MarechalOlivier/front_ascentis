@@ -63,7 +63,7 @@ const Account = () => {
               </div>
               {isAdmin && (
                 <div className="line">
-                  <h3>Liste des tickets</h3>
+                  <h3>Admininistration des tickets</h3>
                   <p>Gérer les tickets</p>
                   <button className="btn btn-primary">
                     <Link to="/admin/list_ticket">Gérer les tickets</Link>

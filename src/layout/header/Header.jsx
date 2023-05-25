@@ -35,7 +35,7 @@ const Header =() => {
             <div className="account-logo">
                 <div className="account">
                     <img src={logoCompte} alt="Logo de compte"/>
-                    <Link to="/admin/account">Mon Compte</Link>
+                    <Link to="/account">Mon Compte</Link>
                 </div>
                 <div className="account">
                 <img src={logoCompte} alt="Logo de deconnexion" />

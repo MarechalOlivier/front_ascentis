@@ -29,8 +29,8 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         {/* Admin */}
-        <Route path="/admin/create_account" element={<CreateAccount />} />
-        <Route path="/admin/account" element={<Account />} />
+        <Route path="/create_account" element={<CreateAccount />} />
+        <Route path="/account" element={<Account />} />
         {/* {/* <Route path="/admin/quotation" element={<Quotation />} />  */}
         {/* <Route path="/admin/support_ticket" element={<Support_ticket />} /> */}
 
