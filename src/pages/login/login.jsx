@@ -40,7 +40,7 @@ const Login =() => {
             if (data.token) { // Si j'ai un token dans la réponse
                 const jwt = data.token; // Je récupère le token
                 localStorage.setItem("jwt", jwt); // Je stocke le token dans le localStorage
-                window.location.href = "http://localhost:3000/admin/account"; // Redirection vers la page account
+                window.location.href = "http://localhost:3000/account"; // Redirection vers la page account
             } 
             else {
                 alert("Nom d'utilisateur ou mot de passe incorrect !");

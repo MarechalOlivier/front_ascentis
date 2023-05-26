@@ -5,9 +5,12 @@ import Footer from "../../layout/footer/Footer";
 import "./style_account.scss";
 
 const Account = () => {
-  const navigate = useNavigate();
-  const [userName, setUserName] = useState("");
-  const [userRoles, setUserRoles] = useState("");
+    const navigate = useNavigate();
+    const [userName, setUserName] = useState("");
+    const [userRoles, setUserRoles] = useState("");
+    const [firstName, setUserFirstName] = useState("");
+    const [lastName, setUserLastName] = useState("");
+
 
   // Autorisation JWT
   useEffect(() => {
@@ -22,11 +25,15 @@ const Account = () => {
     const expirationTime = decodedJwt.exp * 1000;
     const username = decodedJwt.username;
     const roles = decodedJwt.roles;
+    const firstName = decodedJwt.firstName;
+    const lastName = decodedJwt.lastName;
 
     const timeoutId = setTimeout(() => {
       navigate("/login");
     }, expirationTime - Date.now());
 
+    setUserLastName(lastName);
+    setUserFirstName(firstName); 
     setUserName(username);
     setUserRoles(roles);
     return () => clearTimeout(timeoutId);
@@ -39,7 +46,7 @@ const Account = () => {
       <Header />
       <main>
         <section id="account">
-          <h1>Bienvenue {userName}</h1>
+          <h1>Bienvenue {firstName} {lastName}</h1>
           <h2>Niveau d'administration : {userRoles}</h2>
           <div className="content-account">
             <div className="ticket">

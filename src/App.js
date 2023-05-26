@@ -6,7 +6,7 @@ import Footer from "./layout/footer/Footer.jsx";
 //Importation des pages
 import Home from "./pages/Home/Home.jsx";
 import CreateAccount from "./pages/Create_account/Create_account.jsx";
-import Login from "./pages/Login/Login.jsx";
+import Login from "./pages/login/Login.jsx";
 import Account from "./pages/Account/Account.jsx";
 import Quotation from "./pages/Quotation/Quotation.jsx";
 import Support_ticket from "./pages/Support_ticket/Support_ticket.jsx";
