@@ -6,6 +6,8 @@ import style from "./style_create_ticket.scss";
 
 const Create_ticket = () => {
 
+    const [id, setUserId] = useState("");
+
     ////////////////////////////////Authentification JWT + durée de validité du token ///////////////////////////   
     const navigate = useNavigate();
     // Autorisation JWT
@@ -31,8 +33,33 @@ const Create_ticket = () => {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+    ////////////////////////////////////Récuprère l'id de l'utilisateur////////////////////////////////////////
+    useEffect(() => {
+        const token = localStorage.getItem("jwt");
+        if (!token) {
+          navigate("/login");
+          return;
+        }
+    
+        const jwtData = token.split(".")[1];
+        const decodedJwt = JSON.parse(atob(jwtData));
+        const expirationTime = decodedJwt.exp * 1000;
+        const id = decodedJwt.data;
+        
+    
+        const timeoutId = setTimeout(() => {
+          navigate("/login");
+        }, expirationTime - Date.now());
+    
+        
+        setUserId(id);
+        return () => clearTimeout(timeoutId);
+      }, [navigate]);
 
-    // Gère la soumission du formulaire
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+
+// Gère la soumission du formulaire
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -71,6 +98,7 @@ const Create_ticket = () => {
                 category: category,
                 subject: subject,
                 description: description,
+                UserId: id,
                 // address: {
                 //     address: address,
                 //     postCode: postCode,
