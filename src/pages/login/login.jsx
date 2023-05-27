@@ -6,7 +6,7 @@ import Footer from "../../layout/footer/Footer";
 import style from "./style_login.scss";
 
 
-const Login =() => {
+const Login =() => { 
 
 
     const handleSubmit = (event) => {
