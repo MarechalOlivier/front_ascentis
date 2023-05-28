@@ -72,10 +72,8 @@ const Create_ticket = () => {
         const category = event.target.category.value;
         const subject = event.target.subject.value;
         const description = event.target.description.value;
-        // const address = event.target.address.value;
-        // const postCode = event.target.postCode.value;
-        // const city = event.target.city.value;
-        // const phone = event.target.phone.value;
+        
+        
 
         console.log("Le formulaire a été soumis");
 
@@ -99,12 +97,7 @@ const Create_ticket = () => {
                 subject: subject,
                 description: description,
                 UserId: id,
-                // address: {
-                //     address: address,
-                //     postCode: postCode,
-                //     city: city,
-                // },
-                // phone: phone,
+                
 
             }),
 
