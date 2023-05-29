@@ -59,19 +59,22 @@
                 }
 
                 input[type="text"],
-                input[type="number"],
-                input[type="textarea"] {
+                input[type="number"] {
+                 
                     border: 1px solid #ccc;
                     border-radius: 5px;
                     padding: 10px;
                     width: 100%;
                 }
 
-                input[type="textarea"] {
+                textarea {
 
                     height: 200px;
                     width: 800px;
                     margin-bottom: 10%;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    padding: 10px;
                     
                 }
             }

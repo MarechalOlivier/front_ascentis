@@ -154,7 +154,7 @@ const Create_ticket = () => {
                             </div>
                             <div className="line">
                                 <label htmlFor="description">Description</label>
-                                <input type="textarea" name="description" />
+                                <textarea type="textarea" name="description" />
                             </div>
                         </div>
                         
