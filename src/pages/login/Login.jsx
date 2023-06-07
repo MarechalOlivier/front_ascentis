@@ -78,7 +78,7 @@ const Login =() => {
                             <h2>Nouveau client ?</h2>
 
                             <div className="col-12 btn-center">
-                                <button type="submit" className="btn btn-primary"><Link to="/admin/create_account">Créez un compte</Link></button>
+                                <button type="submit" className="btn btn-primary"><Link to="/create_account">Créez un compte</Link></button>
                             </div>
                         </form>
                     </div>
